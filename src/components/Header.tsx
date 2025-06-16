@@ -18,7 +18,6 @@ const Header = () => {
     { name: t('navigation.accommodation'), href: '/accommodation', isAnchor: false },
     { name: t('navigation.experiences'), href: '#experiences', isAnchor: true },
     { name: t('navigation.community'), href: '/community', isAnchor: false },
-    { name: t('navigation.travelInfo'), href: '/travel-info', isAnchor: false },
     { name: t('navigation.blog'), href: '/blog', isAnchor: false },
     { name: t('navigation.contact'), href: '#contact', isAnchor: true },
   ];
