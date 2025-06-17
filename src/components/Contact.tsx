@@ -1,13 +1,86 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Calendar, Clock, MessageCircle } from 'lucide-react';
+import { useState } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    checkInDate: '',
+    checkOutDate: '',
+    message: ''
+  });
+  const { toast } = useToast();
+
   const whatsappNumber = "+254796099657";
   const whatsappMessage = "Hello! I'm interested in booking a safari at Samburu Elephant Lodge. Could you please provide more information?";
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert({
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          phone: formData.phone || null,
+          check_in_date: formData.checkInDate || null,
+          check_out_date: formData.checkOutDate || null,
+          message: formData.message || null
+        });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We've received your inquiry and will get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        checkInDate: '',
+        checkOutDate: '',
+        message: ''
+      });
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-brand-cream/30 to-brand-cream/50">
@@ -110,34 +183,63 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-brand-brown font-medium mb-2">
-                      First Name
+                      First Name *
                     </label>
-                    <Input placeholder="Your first name" className="border-brand-cream" />
+                    <Input 
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      placeholder="Your first name" 
+                      className="border-brand-cream" 
+                      required 
+                    />
                   </div>
                   <div>
                     <label className="block text-brand-brown font-medium mb-2">
-                      Last Name
+                      Last Name *
                     </label>
-                    <Input placeholder="Your last name" className="border-brand-cream" />
+                    <Input 
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      placeholder="Your last name" 
+                      className="border-brand-cream" 
+                      required 
+                    />
                   </div>
                 </div>
                 
                 <div>
                   <label className="block text-brand-brown font-medium mb-2">
-                    Email
+                    Email *
                   </label>
-                  <Input type="email" placeholder="your.email@example.com" className="border-brand-cream" />
+                  <Input 
+                    type="email" 
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="your.email@example.com" 
+                    className="border-brand-cream" 
+                    required 
+                  />
                 </div>
                 
                 <div>
                   <label className="block text-brand-brown font-medium mb-2">
                     Phone
                   </label>
-                  <Input type="tel" placeholder="+1 (555) 123-4567" className="border-brand-cream" />
+                  <Input 
+                    type="tel" 
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="+1 (555) 123-4567" 
+                    className="border-brand-cream" 
+                  />
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-4">
@@ -145,13 +247,25 @@ const Contact = () => {
                     <label className="block text-brand-brown font-medium mb-2">
                       Check-in Date
                     </label>
-                    <Input type="date" className="border-brand-cream" />
+                    <Input 
+                      type="date" 
+                      name="checkInDate"
+                      value={formData.checkInDate}
+                      onChange={handleInputChange}
+                      className="border-brand-cream" 
+                    />
                   </div>
                   <div>
                     <label className="block text-brand-brown font-medium mb-2">
                       Check-out Date
                     </label>
-                    <Input type="date" className="border-brand-cream" />
+                    <Input 
+                      type="date" 
+                      name="checkOutDate"
+                      value={formData.checkOutDate}
+                      onChange={handleInputChange}
+                      className="border-brand-cream" 
+                    />
                   </div>
                 </div>
                 
@@ -160,13 +274,20 @@ const Contact = () => {
                     Message
                   </label>
                   <Textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     placeholder="Tell us about your safari dreams..."
                     className="min-h-32 border-brand-cream"
                   />
                 </div>
                 
-                <Button className="bg-brand-orange hover:bg-brand-orange-dark text-white w-full py-3 text-sm uppercase tracking-[0.1em]">
-                  Send Message
+                <Button 
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-brand-orange hover:bg-brand-orange-dark text-white w-full py-3 text-sm uppercase tracking-[0.1em]"
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>
