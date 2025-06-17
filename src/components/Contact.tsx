@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -76,8 +75,7 @@ const Contact = () => {
                     </a>
                   </p>
                 </div>
-                <p className="text-brand-brown/80">Kenya: +254 717 482 045</p>
-                <p className="text-brand-brown/80">Kenya: +254 717 437 335</p>
+                <p className="text-brand-brown/80">Kenya: +254 110 463 062</p>
                 <p className="text-brand-brown/80">UK: +44 7377 308 560</p>
               </CardContent>
             </Card>
