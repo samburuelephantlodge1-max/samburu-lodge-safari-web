@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
@@ -181,7 +180,7 @@ const Accommodation = () => {
     {
       title: "Budget Rooms",
       subtitle: "Shared Accommodation",
-      count: "6-8 Guests per room",
+      count: "4 Guests per room",
       description: "Affordable shared accommodation perfect for students or large groups",
       features: [
         "Bunk beds with mosquito nets",
