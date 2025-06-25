@@ -1,10 +1,10 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MapPin, Phone, Calendar, Clock, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Calendar, Clock, MessageCircle, Link } from 'lucide-react';
 import { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 
@@ -92,6 +92,27 @@ const Contact = () => {
           <p className="text-xl text-brand-brown/80 max-w-3xl mx-auto leading-relaxed font-light">
             Ready to experience the magic of Samburu? Get in touch with us to plan your unforgettable safari adventure
           </p>
+        </div>
+
+        {/* Existing Guests Section */}
+        <div className="mb-16">
+          <div className="bg-brand-brown text-white rounded-lg p-8 max-w-4xl mx-auto shadow-lg">
+            <div className="flex items-center justify-center mb-4">
+              <Calendar className="w-8 h-8 mr-3" />
+              <h3 className="text-2xl font-light font-playfair">Already Booked with Us?</h3>
+            </div>
+            <p className="text-lg mb-6 leading-relaxed opacity-90 text-center">
+              Complete your pre-check-in form to ensure a smooth arrival and personalized experience at Samburu Elephant Lodge.
+            </p>
+            <div className="text-center">
+              <RouterLink to="/pre-check-in">
+                <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark px-8 py-3 rounded-lg font-medium text-lg">
+                  <Link className="w-5 h-5 mr-2" />
+                  Complete Pre-Check-In Form
+                </Button>
+              </RouterLink>
+            </div>
+          </div>
         </div>
 
         {/* WhatsApp Priority Section */}
