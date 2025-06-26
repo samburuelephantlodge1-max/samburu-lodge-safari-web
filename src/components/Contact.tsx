@@ -1,10 +1,10 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Calendar, Clock, MessageCircle, Link } from 'lucide-react';
 import { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 
@@ -105,12 +105,12 @@ const Contact = () => {
               Complete your pre-check-in form to ensure a smooth arrival and personalized experience at Samburu Elephant Lodge.
             </p>
             <div className="text-center">
-              <RouterLink to="/pre-check-in">
+              <a href="/pre-check-in" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark px-8 py-3 rounded-lg font-medium text-lg">
                   <Link className="w-5 h-5 mr-2" />
                   Complete Pre-Check-In Form
                 </Button>
-              </RouterLink>
+              </a>
             </div>
           </div>
         </div>

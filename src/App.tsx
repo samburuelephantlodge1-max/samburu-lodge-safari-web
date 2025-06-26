@@ -9,6 +9,7 @@ import TravelInfo from "./pages/TravelInfo";
 import Blog from "./pages/Blog";
 import Community from "./pages/Community";
 import Accommodation from "./pages/Accommodation";
+import ContactPage from "./pages/Contact";
 import PreCheckIn from "./pages/PreCheckIn";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/community" element={<Community />} />
           <Route path="/accommodation" element={<Accommodation />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/pre-check-in" element={<PreCheckIn />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
