@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -6,7 +5,7 @@ const PreCheckIn = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-b from-brand-cream to-white">
         <div className="container mx-auto px-4">
@@ -37,20 +36,16 @@ const PreCheckIn = () => {
                   personalized service and ensure all arrangements are ready for your arrival.
                 </p>
               </div>
-              
-              <div className="p-4">
-                <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLScGEk8S91atAi-BAq2lH2wUJKGHdqwKi3vmu5TsMuYa8rSktA/viewform?embedded=true" 
-                  width="100%" 
-                  height="5892" 
-                  frameBorder="0" 
-                  marginHeight={0}
-                  marginWidth={0}
-                  className="w-full"
-                  title="Pre-Check-In Form"
+
+              <div className="p-4 text-center">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScGEk8S91atAi-BAq2lH2wUJKGHdqwKi3vmu5TsMuYa8rSktA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-brand-brown text-white font-medium py-3 px-6 rounded-lg hover:bg-brand-brown-dark transition"
                 >
-                  Loading…
-                </iframe>
+                  Open Pre‑Check‑In Form
+                </a>
               </div>
             </div>
           </div>
