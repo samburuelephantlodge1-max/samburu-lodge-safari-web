@@ -2,6 +2,7 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -33,15 +34,19 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Button className="bg-white text-black hover:bg-white/90 px-8 py-4 text-base font-normal tracking-wide uppercase">
-            {t('hero.makeReservation')}
-          </Button>
-          <Button 
-            variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-base font-normal tracking-wide uppercase bg-transparent"
-          >
-            {t('hero.exploreExperiences')}
-          </Button>
+          <Link to="/contact">
+            <Button className="bg-white text-black hover:bg-white/90 px-8 py-4 text-base font-normal tracking-wide uppercase">
+              {t('hero.makeReservation')}
+            </Button>
+          </Link>
+          <Link to="/experiences">
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-base font-normal tracking-wide uppercase bg-transparent"
+            >
+              {t('hero.exploreExperiences')}
+            </Button>
+          </Link>
         </div>
       </div>
 
