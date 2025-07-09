@@ -233,9 +233,6 @@ const Contact = () => {
                 {/* Spam protection: honeypot field (invisible to users) */}
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 
-                {/* Optional: redirect to thank-you page after submit */}
-                <input type="hidden" name="_next" value="https://lovable.dev/thank-you" />
-                
                 <Button 
                   type="submit"
                   className="bg-brand-orange hover:bg-brand-orange-dark text-white w-full py-3 text-sm uppercase tracking-[0.1em]"
