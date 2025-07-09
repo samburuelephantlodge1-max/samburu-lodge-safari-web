@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import TripAdvisorWidget from './TripAdvisorWidget';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -29,9 +30,11 @@ const Hero = () => {
           </h1>
         </div>
         
-        <p className="text-lg md:text-xl font-light mb-12 max-w-3xl mx-auto leading-relaxed opacity-90">
+        <p className="text-lg md:text-xl font-light mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
           {t('hero.description')}
         </p>
+        
+        <TripAdvisorWidget />
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Link to="/contact">
