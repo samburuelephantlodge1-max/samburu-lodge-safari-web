@@ -1,4 +1,6 @@
 
+import TripAdvisorWidget from './TripAdvisorWidget';
+
 const Footer = () => {
   return (
     <footer className="bg-earth-800 text-white py-12">
@@ -46,11 +48,14 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-earth-700 mt-8 pt-8 text-center">
-          <p className="text-earth-300">
+        <div className="border-t border-earth-700 mt-8 pt-8">
+          <TripAdvisorWidget />
+          <div className="text-center mt-4">
+            <p className="text-earth-300">
             © 2025 Samburu Elephant Lodge. All rights reserved. | 
             <span className="ml-2">Sustainable Tourism • Wildlife Conservation • Community Development</span>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
