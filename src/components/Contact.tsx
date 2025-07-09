@@ -3,12 +3,51 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Calendar, Clock, MessageCircle, Link } from 'lucide-react';
+import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const whatsappNumber = "+254796099657";
   const whatsappMessage = "Hello! I'm interested in booking a safari at Samburu Elephant Lodge. Could you please provide more information?";
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xgvyjqzo', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "We've received your inquiry and will get back to you soon.",
+        });
+        form.reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-brand-cream/30 to-brand-cream/50">
@@ -136,7 +175,7 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form action="https://formspree.io/f/xgvyjqzo" method="POST" className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="first-name" className="block text-brand-brown font-medium mb-2">
@@ -235,9 +274,10 @@ const Contact = () => {
                 
                 <Button 
                   type="submit"
+                  disabled={isSubmitting}
                   className="bg-brand-orange hover:bg-brand-orange-dark text-white w-full py-3 text-sm uppercase tracking-[0.1em]"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>
