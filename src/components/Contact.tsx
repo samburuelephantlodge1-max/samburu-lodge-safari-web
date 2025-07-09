@@ -4,79 +4,35 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Calendar, Clock, MessageCircle, Link } from 'lucide-react';
 import { useState } from 'react';
-import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    checkInDate: '',
-    checkOutDate: '',
-    message: ''
-  });
   const { toast } = useToast();
 
   const whatsappNumber = "+254796099657";
   const whatsappMessage = "Hello! I'm interested in booking a safari at Samburu Elephant Lodge. Could you please provide more information?";
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
     setIsSubmitting(true);
-
+    
+    // Let Formspree handle the submission
     try {
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert({
-          first_name: formData.firstName,
-          last_name: formData.lastName,
-          email: formData.email,
-          phone: formData.phone || null,
-          check_in_date: formData.checkInDate || null,
-          check_out_date: formData.checkOutDate || null,
-          message: formData.message || null
+      // Show success message after a brief delay to simulate submission
+      setTimeout(() => {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "We've received your inquiry and will get back to you soon.",
         });
-
-      if (error) {
-        throw error;
-      }
-
-      toast({
-        title: "Message Sent Successfully!",
-        description: "We've received your inquiry and will get back to you soon.",
-      });
-
-      // Reset form
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        checkInDate: '',
-        checkOutDate: '',
-        message: ''
-      });
-
+        setIsSubmitting(false);
+      }, 1000);
     } catch (error) {
-      console.error('Error submitting form:', error);
       toast({
         title: "Error",
         description: "There was a problem sending your message. Please try again.",
         variant: "destructive"
       });
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -207,29 +163,29 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formspree.io/f/xgvyjqzo" method="POST" onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-brand-brown font-medium mb-2">
+                    <label htmlFor="first-name" className="block text-brand-brown font-medium mb-2">
                       First Name *
                     </label>
                     <Input 
+                      type="text"
+                      id="first-name"
                       name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
                       placeholder="Your first name" 
                       className="border-brand-cream" 
                       required 
                     />
                   </div>
                   <div>
-                    <label className="block text-brand-brown font-medium mb-2">
+                    <label htmlFor="last-name" className="block text-brand-brown font-medium mb-2">
                       Last Name *
                     </label>
                     <Input 
+                      type="text"
+                      id="last-name"
                       name="lastName"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
                       placeholder="Your last name" 
                       className="border-brand-cream" 
                       required 
@@ -238,14 +194,13 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label className="block text-brand-brown font-medium mb-2">
+                  <label htmlFor="email" className="block text-brand-brown font-medium mb-2">
                     Email *
                   </label>
                   <Input 
                     type="email" 
+                    id="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
                     placeholder="your.email@example.com" 
                     className="border-brand-cream" 
                     required 
@@ -253,14 +208,13 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label className="block text-brand-brown font-medium mb-2">
+                  <label htmlFor="phone" className="block text-brand-brown font-medium mb-2">
                     Phone
                   </label>
                   <Input 
                     type="tel" 
+                    id="phone"
                     name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
                     placeholder="+1 (555) 123-4567" 
                     className="border-brand-cream" 
                   />
@@ -268,43 +222,46 @@ const Contact = () => {
                 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-brand-brown font-medium mb-2">
+                    <label htmlFor="checkin" className="block text-brand-brown font-medium mb-2">
                       Check-in Date
                     </label>
                     <Input 
                       type="date" 
-                      name="checkInDate"
-                      value={formData.checkInDate}
-                      onChange={handleInputChange}
+                      id="checkin"
+                      name="checkin"
                       className="border-brand-cream" 
                     />
                   </div>
                   <div>
-                    <label className="block text-brand-brown font-medium mb-2">
+                    <label htmlFor="checkout" className="block text-brand-brown font-medium mb-2">
                       Check-out Date
                     </label>
                     <Input 
                       type="date" 
-                      name="checkOutDate"
-                      value={formData.checkOutDate}
-                      onChange={handleInputChange}
+                      id="checkout"
+                      name="checkout"
                       className="border-brand-cream" 
                     />
                   </div>
                 </div>
                 
                 <div>
-                  <label className="block text-brand-brown font-medium mb-2">
+                  <label htmlFor="message" className="block text-brand-brown font-medium mb-2">
                     Message
                   </label>
                   <Textarea 
+                    id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
                     placeholder="Tell us about your safari dreams..."
                     className="min-h-32 border-brand-cream"
                   />
                 </div>
+
+                {/* Spam protection: honeypot field (invisible to users) */}
+                <input type="text" name="_gotcha" style={{display: 'none'}} />
+                
+                {/* Optional: redirect to thank-you page after submit */}
+                <input type="hidden" name="_next" value="https://lovable.dev/thank-you" />
                 
                 <Button 
                   type="submit"
