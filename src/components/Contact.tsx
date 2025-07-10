@@ -72,11 +72,7 @@ const Contact = () => {
               Complete your pre-check-in form to ensure a smooth arrival and personalized experience at Samburu Elephant Lodge.
             </p>
             <div className="text-center">
-              <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScGEk8S91atAi-BAq2lH2wUJKGHdqwKi3vmu5TsMuYa8rSktA/viewform" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="/pre-checkin">
                 <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark px-8 py-3 rounded-lg font-medium text-lg">
                   <Link className="w-5 h-5 mr-2" />
                   Complete Pre-Check-In Form
