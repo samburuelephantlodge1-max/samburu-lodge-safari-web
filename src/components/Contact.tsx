@@ -3,8 +3,47 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Calendar, Clock, MessageCircle, Link } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
+
+const TripAdvisorReviewWidget = () => {
+  useEffect(() => {
+    // Load TripAdvisor script if not already loaded
+    const existingScript = document.querySelector('script[src*="jscache.com/wejs"][src*="cdswritereviewlg"]');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = "https://www.jscache.com/wejs?wtype=cdswritereviewlg&uniq=141&locationId=24053068&lang=en_US&lang=en_US&display_version=2";
+      script.setAttribute('data-loadtrk', '');
+      script.onload = function() {
+        (this as any).loadtrk = true;
+      };
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  return (
+    <div className="flex justify-center my-6">
+      <div id="TA_cdswritereviewlg141" className="TA_cdswritereviewlg">
+        <ul id="oOvPDe7lKAGQ" className="TA_links F87WSRzC9q">
+          <li id="Z4x6ch" className="zhJA3hP8">
+            <a 
+              target="_blank" 
+              rel="noopener noreferrer"
+              href="https://www.tripadvisor.com/Hotel_Review-g298254-d24053068-Reviews-Samburu_Elephant_Lodge-Samburu_National_Reserve_Samburu_District_Rift_Valley_Province.html"
+            >
+              <img 
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" 
+                alt="TripAdvisor"
+                className="max-h-8"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -278,6 +317,19 @@ const Contact = () => {
               </form>
             </CardContent>
           </Card>
+        </div>
+        
+        {/* TripAdvisor Review Widget */}
+        <div className="mt-16 text-center">
+          <div className="bg-white rounded-lg p-8 max-w-4xl mx-auto shadow-sm border border-brand-cream/50">
+            <h3 className="text-2xl font-light font-playfair text-brand-brown mb-4">
+              Share Your Experience
+            </h3>
+            <p className="text-brand-brown/80 mb-6 leading-relaxed">
+              Had a wonderful stay with us? We'd love to hear about your safari adventure!
+            </p>
+            <TripAdvisorReviewWidget />
+          </div>
         </div>
       </div>
     </section>
