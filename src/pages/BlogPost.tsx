@@ -10,50 +10,61 @@ const blogPosts = {
     title: 'Best Time to Visit Samburu National Reserve',
     excerpt: 'Planning your safari? Discover the optimal seasons for wildlife viewing, weather conditions, and unforgettable experiences in Samburu.',
     author: 'Samburu Elephant Lodge',
-    date: 'December 15, 2024',
+    date: 'July 14, 2025',
     readTime: '8 min read',
     category: 'Safari Guide',
     image: '/lovable-uploads/349d6974-edd6-418e-8d19-2ef6ff2075ae.png',
     content: `
-      <div class="prose prose-lg max-w-none">
-        <h2>Why Visit Samburu?</h2>
-        <p>Located in northern Kenya, Samburu National Reserve offers one of the most authentic safari experiences in Africa. Unlike the more popular southern parks, Samburu is rugged, remote, and uncrowded — ideal for travelers who want a deeper connection with nature.</p>
-        
-        <p>This semi-arid landscape along the Ewaso Ng'iro River is home to an extraordinary array of wildlife, including the rare "Samburu Special Five": Grevy's zebra, reticulated giraffe, Somali ostrich, Beisa oryx, and the long-necked gerenuk. You'll also find elephants, lions, leopards, crocodiles, and over 450 bird species. Add in rich Samburu culture and dramatic terrain, and you have a truly unforgettable destination.</p>
+      <h2>Why Visit Samburu?</h2>
+      
+      <p>Located in northern Kenya, Samburu National Reserve offers one of the most authentic safari experiences in Africa. Unlike the more popular southern parks, Samburu is rugged, remote, and uncrowded — ideal for travelers who want a deeper connection with nature.</p>
+      
+      <p>This semi-arid landscape along the Ewaso Ng'iro River is home to an extraordinary array of wildlife, including the rare "Samburu Special Five": Grevy's zebra, reticulated giraffe, Somali ostrich, Beisa oryx, and the long-necked gerenuk.</p>
+      
+      <p>You'll also find elephants, lions, leopards, crocodiles, and over 450 bird species. Add in rich Samburu culture and dramatic terrain, and you have a truly unforgettable destination.</p>
 
-        <h2>Best Time to Visit: A Seasonal Overview</h2>
-        
-        <h3>Dry Season (June to October and January to February)</h3>
-        <p><strong>Best for:</strong> Wildlife viewing, photography, comfortable game drives</p>
-        <ul>
-          <li>Animals congregate at the river and other water sources, making sightings more frequent and dramatic.</li>
-          <li>Clear skies provide excellent light for photography.</li>
-          <li>Roads are dry and accessible, making it ideal for game drives and walking safaris.</li>
-          <li>Cooler mornings and evenings ensure comfortable travel conditions.</li>
-        </ul>
-        <p><strong>Why go now:</strong> This is peak safari season. If you're hoping to spot predators or want the best overall game viewing, this is the ideal time to visit.</p>
+      <h2>Best Time to Visit: A Seasonal Overview</h2>
+      
+      <h3>Dry Season (June to October and January to February)</h3>
+      
+      <p><strong>Best for:</strong> Wildlife viewing, photography, comfortable game drives</p>
+      
+      <ul>
+        <li>Animals congregate at the river and other water sources, making sightings more frequent and dramatic.</li>
+        <li>Clear skies provide excellent light for photography.</li>
+        <li>Roads are dry and accessible, making it ideal for game drives and walking safaris.</li>
+        <li>Cooler mornings and evenings ensure comfortable travel conditions.</li>
+      </ul>
+      
+      <p><strong>Why go now:</strong> This is peak safari season. If you're hoping to spot predators or want the best overall game viewing, this is the ideal time to visit.</p>
 
-        <h3>Shoulder Season (March, June, September, December)</h3>
-        <p><strong>Best for:</strong> Fewer tourists, good wildlife, lower rates</p>
-        <ul>
-          <li>Wildlife is still active, especially in March and December.</li>
-          <li>The landscape starts to green, offering beautiful contrast for photos.</li>
-          <li>Quieter camps and lodges enhance the experience.</li>
-          <li>Rates are often more affordable before and after peak periods.</li>
-        </ul>
-        <p><strong>Why go now:</strong> Perfect for travelers who want a balanced safari experience — fewer crowds, great sightings, and a bit of everything Samburu has to offer.</p>
+      <h3>Shoulder Season (March, June, September, December)</h3>
+      
+      <p><strong>Best for:</strong> Fewer tourists, good wildlife, lower rates</p>
+      
+      <ul>
+        <li>Wildlife is still active, especially in March and December.</li>
+        <li>The landscape starts to green, offering beautiful contrast for photos.</li>
+        <li>Quieter camps and lodges enhance the experience.</li>
+        <li>Rates are often more affordable before and after peak periods.</li>
+      </ul>
+      
+      <p><strong>Why go now:</strong> Perfect for travelers who want a balanced safari experience — fewer crowds, great sightings, and a bit of everything Samburu has to offer.</p>
 
-        <h3>Wet Season (March to May and October to November)</h3>
-        <p><strong>Best for:</strong> Birdwatching, lush scenery, baby animals</p>
-        <ul>
-          <li>A paradise for birdwatchers, with migratory species joining resident birds.</li>
-          <li>This is calving season for many animals, offering rare glimpses of newborns.</li>
-          <li>The park transforms into a green oasis, perfect for landscape photography.</li>
-          <li>Fewer visitors mean a more peaceful safari at reduced costs.</li>
-        </ul>
-        <p><strong>What to consider:</strong> Heavy rains can make some roads difficult to navigate, and wildlife may spread out due to abundant water. Still, for those seeking beauty, birds, and serenity, this is a rewarding time to visit.</p>
+      <h3>Wet Season (March to May and October to November)</h3>
+      
+      <p><strong>Best for:</strong> Birdwatching, lush scenery, baby animals</p>
+      
+      <ul>
+        <li>A paradise for birdwatchers, with migratory species joining resident birds.</li>
+        <li>This is calving season for many animals, offering rare glimpses of newborns.</li>
+        <li>The park transforms into a green oasis, perfect for landscape photography.</li>
+        <li>Fewer visitors mean a more peaceful safari at reduced costs.</li>
+      </ul>
+      
+      <p><strong>What to consider:</strong> Heavy rains can make some roads difficult to navigate, and wildlife may spread out due to abundant water. Still, for those seeking beauty, birds, and serenity, this is a rewarding time to visit.</p>
 
-        <h2>Month-by-Month Safari Guide</h2>
+      <h2>Month-by-Month Safari Guide</h2>
         <div class="overflow-x-auto my-8">
           <table class="w-full border-collapse border border-brand-cream">
             <thead>
@@ -81,68 +92,70 @@ const blogPosts = {
           </table>
         </div>
 
-        <h2>What to Do in Samburu (All Year Round)</h2>
-        
-        <h3>Game Drives</h3>
-        <p>The best way to see Samburu's wildlife, especially early morning and late afternoon. Dry season drives offer the most consistent big game sightings.</p>
+      <h2>What to Do in Samburu (All Year Round)</h2>
+      
+      <h3>Game Drives</h3>
+      <p>The best way to see Samburu's wildlife, especially early morning and late afternoon. Dry season drives offer the most consistent big game sightings.</p>
 
-        <h3>Walking Safaris</h3>
-        <p>Available in dry months, these are a great way to get close to nature and explore the landscape on foot with a professional guide.</p>
+      <h3>Walking Safaris</h3>
+      <p>Available in dry months, these are a great way to get close to nature and explore the landscape on foot with a professional guide.</p>
 
-        <h3>Birdwatching</h3>
-        <p>With over 450 species, Samburu is a birder's dream — especially during the rainy season when migratory birds arrive.</p>
+      <h3>Birdwatching</h3>
+      <p>With over 450 species, Samburu is a birder's dream — especially during the rainy season when migratory birds arrive.</p>
 
-        <h3>Cultural Tours</h3>
-        <p>Visit Samburu villages and engage with the traditions, music, and crafts of one of Kenya's most iconic communities. Cultural experiences are available all year.</p>
+      <h3>Cultural Tours</h3>
+      <p>Visit Samburu villages and engage with the traditions, music, and crafts of one of Kenya's most iconic communities. Cultural experiences are available all year.</p>
 
-        <h3>Photography</h3>
-        <p>From dry, sun-baked vistas to lush, green backdrops during the rains, Samburu offers an ever-changing palette for photographers.</p>
+      <h3>Photography</h3>
+      <p>From dry, sun-baked vistas to lush, green backdrops during the rains, Samburu offers an ever-changing palette for photographers.</p>
 
-        <h2>When Should You Go?</h2>
-        <ul>
-          <li><strong>For first-time safaris or big game focus</strong> — choose the dry season: June to October or January to February.</li>
-          <li><strong>For scenic beauty, birds, and baby animals</strong> — visit during the wet months: March to May or October to November.</li>
-          <li><strong>For balance and value</strong> — travel in March, early June, September, or December.</li>
-        </ul>
+      <h2>When Should You Go?</h2>
+      
+      <ul>
+        <li><strong>For first-time safaris or big game focus</strong> — choose the dry season: June to October or January to February.</li>
+        <li><strong>For scenic beauty, birds, and baby animals</strong> — visit during the wet months: March to May or October to November.</li>
+        <li><strong>For balance and value</strong> — travel in March, early June, September, or December.</li>
+      </ul>
 
-        <h2>Final Thoughts</h2>
-        <p>Samburu isn't just a destination — it's a feeling. Wild, soulful, and less explored than Kenya's southern parks, it rewards the curious traveler with stunning scenery, rare wildlife, and a deep sense of place. No matter when you go, Samburu will leave you with memories that last a lifetime.</p>
-        
-        <p>Plan wisely, travel responsibly, and let the magic of Samburu unfold.</p>
-      </div>
+      <h2>Final Thoughts</h2>
+      
+      <p>Samburu isn't just a destination — it's a feeling. Wild, soulful, and less explored than Kenya's southern parks, it rewards the curious traveler with stunning scenery, rare wildlife, and a deep sense of place. No matter when you go, Samburu will leave you with memories that last a lifetime.</p>
+      
+      <p>Plan wisely, travel responsibly, and let the magic of Samburu unfold.</p>
     `
   },
   'sustainable-safari-eco-tourism': {
     title: 'Sustainable Safari: Our Eco‑Tourism Commitment',
     excerpt: 'Learn how Samburu Elephant Lodge contributes to conservation efforts and empowers local communities through responsible tourism practices.',
     author: 'Samburu Elephant Lodge',
-    date: 'December 10, 2024',
+    date: 'July 14, 2025',
     readTime: '6 min read',
     category: 'Conservation',
     image: '/lovable-uploads/7ca574ad-4fab-422e-b0e8-19d05f205a0f.png',
     content: `
-      <div class="prose prose-lg max-w-none">
-        <h2>1. Eco-Luxury Rooted in Conservation</h2>
-        <p>Samburu Elephant Lodge offers more than just a place to stay—it's a model of responsible tourism that blends comfort with a deep respect for the environment. Every aspect of the lodge is designed to minimize ecological impact while enhancing the guest experience.</p>
-        
-        <ul>
-          <li>Powered largely by solar energy and built using locally sourced materials.</li>
-          <li>Employs water-saving systems and responsible waste management.</li>
-          <li>Operates with a low-impact philosophy to preserve the surrounding ecosystem.</li>
-        </ul>
-        
-        <p>By staying at the lodge, guests enjoy sustainable luxury without compromising the integrity of Samburu's wild landscape.</p>
+      <h2>1. Eco-Luxury Rooted in Conservation</h2>
+      
+      <p>Samburu Elephant Lodge offers more than just a place to stay—it's a model of responsible tourism that blends comfort with a deep respect for the environment. Every aspect of the lodge is designed to minimize ecological impact while enhancing the guest experience.</p>
+      
+      <ul>
+        <li>Powered largely by solar energy and built using locally sourced materials.</li>
+        <li>Employs water-saving systems and responsible waste management.</li>
+        <li>Operates with a low-impact philosophy to preserve the surrounding ecosystem.</li>
+      </ul>
+      
+      <p>By staying at the lodge, guests enjoy sustainable luxury without compromising the integrity of Samburu's wild landscape.</p>
 
-        <h2>2. Active Participation in Wildlife Conservation</h2>
-        <p>The lodge plays an important role in protecting the wildlife that makes Samburu so special.</p>
-        
-        <ul>
-          <li>Supports the conservation of the "Samburu Special Five" and other endangered species like the Grevy's zebra.</li>
-          <li>Partners with local conservancies and non-profits involved in anti-poaching efforts and habitat preservation.</li>
-          <li>Contributes to wildlife monitoring projects, including tracking of elephants, big cats, and bird species.</li>
-        </ul>
-        
-        <p>A portion of every stay goes directly toward funding these critical conservation initiatives.</p>
+      <h2>2. Active Participation in Wildlife Conservation</h2>
+      
+      <p>The lodge plays an important role in protecting the wildlife that makes Samburu so special.</p>
+      
+      <ul>
+        <li>Supports the conservation of the "Samburu Special Five" and other endangered species like the Grevy's zebra.</li>
+        <li>Partners with local conservancies and non-profits involved in anti-poaching efforts and habitat preservation.</li>
+        <li>Contributes to wildlife monitoring projects, including tracking of elephants, big cats, and bird species.</li>
+      </ul>
+      
+      <p>A portion of every stay goes directly toward funding these critical conservation initiatives.</p>
 
         <h2>3. Community Empowerment Through Tourism</h2>
         <p>At the heart of Samburu Elephant Lodge's eco-tourism mission is a commitment to uplifting local communities.</p>
@@ -200,7 +213,7 @@ const blogPosts = {
     title: 'More Than a Safari: How Your Stay Changes Lives',
     excerpt: 'Discover the profound impact your visit has on wildlife conservation, community empowerment, and environmental restoration in Samburu.',
     author: 'Samburu Elephant Lodge',
-    date: 'December 8, 2024',
+    date: 'July 14, 2025',
     readTime: '7 min read',
     category: 'Impact Stories',
     image: '/lovable-uploads/1fbbafa5-a3d3-4162-b471-49f406e6f193.png',
@@ -274,7 +287,6 @@ const blogPosts = {
         </blockquote>
 
         <p>Your safari at Samburu Elephant Lodge is more than a vacation—it's a transformative experience that changes lives, protects wildlife, and preserves one of Africa's most magnificent landscapes for generations to come.</p>
-      </div>
     `
   }
 };
@@ -354,22 +366,21 @@ const BlogPost = () => {
           </div>
           
           <div 
-            className="bg-white rounded-xl p-12 md:p-20 shadow-lg border border-brand-cream/30 
-              prose prose-xl max-w-none 
-              prose-headings:font-playfair prose-headings:text-brand-brown prose-headings:mb-10 prose-headings:mt-16
-              prose-h2:text-4xl prose-h2:leading-tight prose-h2:mb-12 prose-h2:mt-24 prose-h2:first:mt-0
-              prose-h3:text-3xl prose-h3:mb-8 prose-h3:mt-16
-              prose-p:text-lg prose-p:leading-relaxed prose-p:mb-10 prose-p:text-brand-brown/80
-              prose-ul:mb-12 prose-ul:mt-6 prose-li:mb-4 prose-li:text-lg prose-li:leading-relaxed prose-li:text-brand-brown/80
-              prose-strong:text-brand-brown prose-strong:font-semibold
-              prose-table:border-brand-cream/50 prose-table:mb-16 prose-table:mt-8 prose-table:shadow-md prose-table:rounded-lg prose-table:overflow-hidden
-              prose-th:bg-brand-cream/40 prose-th:text-brand-brown prose-th:font-semibold prose-th:p-4
-              prose-td:text-brand-brown/80 prose-td:p-4 prose-td:border-brand-cream/30
-              prose-blockquote:border-l-4 prose-blockquote:border-brand-terracotta prose-blockquote:bg-brand-cream/20 
-              prose-blockquote:px-8 prose-blockquote:py-6 prose-blockquote:rounded-r-lg prose-blockquote:my-16 prose-blockquote:text-brand-brown/90
-              [&_.bg-brand-cream\\/30]:bg-brand-cream/20 [&_.bg-brand-cream\\/30]:p-8 [&_.bg-brand-cream\\/30]:rounded-xl [&_.bg-brand-cream\\/30]:my-12
-              [&_.grid]:gap-6 [&_.text-center]:mb-0
-              first-letter:text-6xl first-letter:font-bold first-letter:text-brand-terracotta first-letter:float-left first-letter:mr-3 first-letter:mt-1"
+            className="bg-white rounded-xl p-16 md:p-24 shadow-lg border border-brand-cream/30 
+              prose prose-xl max-w-none leading-relaxed
+              [&_h2]:font-playfair [&_h2]:text-brand-brown [&_h2]:text-4xl [&_h2]:leading-tight [&_h2]:mb-16 [&_h2]:mt-32 [&_h2]:first:mt-0
+              [&_h3]:font-playfair [&_h3]:text-brand-brown [&_h3]:text-3xl [&_h3]:mb-12 [&_h3]:mt-24
+              [&_p]:text-lg [&_p]:leading-loose [&_p]:mb-12 [&_p]:text-brand-brown/80
+              [&_ul]:mb-16 [&_ul]:mt-8 [&_li]:mb-6 [&_li]:text-lg [&_li]:leading-relaxed [&_li]:text-brand-brown/80
+              [&_strong]:text-brand-brown [&_strong]:font-semibold
+              [&_table]:border-brand-cream/50 [&_table]:mb-20 [&_table]:mt-12 [&_table]:shadow-md [&_table]:rounded-lg [&_table]:overflow-hidden
+              [&_th]:bg-brand-cream/40 [&_th]:text-brand-brown [&_th]:font-semibold [&_th]:p-4
+              [&_td]:text-brand-brown/80 [&_td]:p-4 [&_td]:border-brand-cream/30
+              [&_blockquote]:border-l-4 [&_blockquote]:border-brand-terracotta [&_blockquote]:bg-brand-cream/20 
+              [&_blockquote]:px-8 [&_blockquote]:py-8 [&_blockquote]:rounded-r-lg [&_blockquote]:my-20 [&_blockquote]:text-brand-brown/90 [&_blockquote]:text-xl [&_blockquote]:italic
+              [&_.bg-brand-cream\\/30]:bg-brand-cream/20 [&_.bg-brand-cream\\/30]:p-10 [&_.bg-brand-cream\\/30]:rounded-xl [&_.bg-brand-cream\\/30]:my-16
+              [&_.grid]:gap-8 [&_.text-center]:mb-0
+              first-letter:text-7xl first-letter:font-bold first-letter:text-brand-terracotta first-letter:float-left first-letter:mr-4 first-letter:mt-2 first-letter:leading-none"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
