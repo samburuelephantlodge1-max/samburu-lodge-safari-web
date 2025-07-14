@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, User, ArrowRight, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const featuredPost = {
@@ -58,34 +59,15 @@ const Blog = () => {
 
   const blogPosts = [
     {
-      id: 2,
-      title: "The Samburu Special Five: Wildlife You'll Only See Here",
-      excerpt: "Discover the unique wildlife species that make Samburu National Reserve truly special - from the reticulated giraffe to the Grevy's zebra, these endemic species offer unforgettable wildlife experiences.",
-      author: "Safari Guide Team",
-      date: "December 15, 2024",
-      category: "Wildlife",
-      image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=800&q=80",
-      readTime: "5 min read"
-    },
-    {
-      id: 3,
-      title: "Cultural Immersion: Learning from the Samburu People",
-      excerpt: "Experience authentic cultural exchanges with the Samburu community, from traditional beadwork to warrior academy training and age-old pastoralist traditions.",
-      author: "Cultural Experience Team",
-      date: "December 10, 2024",
-      category: "Culture",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
-      readTime: "7 min read"
-    },
-    {
       id: 4,
       title: "Sustainable Safari: Our Eco-Tourism Commitment",
       excerpt: "Learn how Samburu Elephant Lodge contributes to conservation efforts and empowers local communities through responsible tourism practices.",
       author: "Conservation Team",
       date: "December 5, 2024",
       category: "Conservation",
-      image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
-      readTime: "6 min read"
+      image: "/lovable-uploads/7ca574ad-4fab-422e-b0e8-19d05f205a0f.png",
+      readTime: "6 min read",
+      slug: "sustainable-safari-eco-tourism"
     },
     {
       id: 5,
@@ -94,8 +76,9 @@ const Blog = () => {
       author: "Travel Planning Team",
       date: "November 28, 2024",
       category: "Travel Tips",
-      image: "https://images.unsplash.com/photo-1549366021-9f761d040a94?auto=format&fit=crop&w=800&q=80",
-      readTime: "4 min read"
+      image: "/lovable-uploads/349d6974-edd6-418e-8d19-2ef6ff2075ae.png",
+      readTime: "4 min read",
+      slug: "best-time-to-visit-samburu"
     }
   ];
 
@@ -200,12 +183,14 @@ const Blog = () => {
                   <p className="text-brand-brown/80 leading-relaxed font-light mb-6">
                     {post.excerpt}
                   </p>
-                  <Button 
-                    variant="ghost" 
-                    className="p-0 h-auto text-brand-orange hover:text-brand-orange-dark font-light text-sm uppercase tracking-[0.1em]"
-                  >
-                    Read More <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  <Link to={`/blog/${post.slug}`}>
+                    <Button 
+                      variant="ghost" 
+                      className="p-0 h-auto text-brand-orange hover:text-brand-orange-dark font-light text-sm uppercase tracking-[0.1em]"
+                    >
+                      Read More <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </Link>
                 </CardHeader>
               </Card>
             ))}

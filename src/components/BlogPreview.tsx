@@ -64,7 +64,7 @@ const BlogPreview = () => {
                 {featuredPost.excerpt}
               </p>
               <div className="space-y-4">
-                <Link to="/blog">
+                <Link to="/blog/more-than-safari-changes-lives">
                   <Button 
                     variant="ghost" 
                     className="p-0 h-auto text-brand-orange hover:text-brand-orange-dark font-light text-sm uppercase tracking-[0.1em]"
