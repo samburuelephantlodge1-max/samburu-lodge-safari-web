@@ -342,11 +342,11 @@ const BlogPost = () => {
       </section>
 
       {/* Blog Content */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="mb-8">
+      <section className="py-20">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <div className="mb-12">
             <Link to="/blog">
-              <Button variant="outline" className="inline-flex items-center gap-2">
+              <Button variant="outline" className="inline-flex items-center gap-2 hover:bg-brand-cream/50 transition-colors">
                 <ArrowLeft className="h-4 w-4" />
                 Back to Blog
               </Button>
@@ -354,9 +354,44 @@ const BlogPost = () => {
           </div>
           
           <div 
-            className="bg-white rounded-lg p-8 md:p-12 shadow-sm border border-brand-cream/50 prose prose-lg max-w-none prose-headings:font-playfair prose-headings:text-brand-brown prose-p:text-brand-brown/80 prose-p:leading-relaxed prose-li:text-brand-brown/80 prose-strong:text-brand-brown prose-table:border-brand-cream/50 prose-th:bg-brand-cream/30 prose-th:text-brand-brown prose-td:text-brand-brown/80 prose-blockquote:border-brand-terracotta prose-blockquote:text-brand-brown/90"
+            className="bg-white rounded-xl p-12 md:p-20 shadow-lg border border-brand-cream/30 
+              prose prose-xl max-w-none 
+              prose-headings:font-playfair prose-headings:text-brand-brown prose-headings:mb-10 prose-headings:mt-16
+              prose-h2:text-4xl prose-h2:leading-tight prose-h2:mb-12 prose-h2:mt-24 prose-h2:first:mt-0
+              prose-h3:text-3xl prose-h3:mb-8 prose-h3:mt-16
+              prose-p:text-lg prose-p:leading-relaxed prose-p:mb-10 prose-p:text-brand-brown/80
+              prose-ul:mb-12 prose-ul:mt-6 prose-li:mb-4 prose-li:text-lg prose-li:leading-relaxed prose-li:text-brand-brown/80
+              prose-strong:text-brand-brown prose-strong:font-semibold
+              prose-table:border-brand-cream/50 prose-table:mb-16 prose-table:mt-8 prose-table:shadow-md prose-table:rounded-lg prose-table:overflow-hidden
+              prose-th:bg-brand-cream/40 prose-th:text-brand-brown prose-th:font-semibold prose-th:p-4
+              prose-td:text-brand-brown/80 prose-td:p-4 prose-td:border-brand-cream/30
+              prose-blockquote:border-l-4 prose-blockquote:border-brand-terracotta prose-blockquote:bg-brand-cream/20 
+              prose-blockquote:px-8 prose-blockquote:py-6 prose-blockquote:rounded-r-lg prose-blockquote:my-16 prose-blockquote:text-brand-brown/90
+              [&_.bg-brand-cream\\/30]:bg-brand-cream/20 [&_.bg-brand-cream\\/30]:p-8 [&_.bg-brand-cream\\/30]:rounded-xl [&_.bg-brand-cream\\/30]:my-12
+              [&_.grid]:gap-6 [&_.text-center]:mb-0
+              first-letter:text-6xl first-letter:font-bold first-letter:text-brand-terracotta first-letter:float-left first-letter:mr-3 first-letter:mt-1"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* Call to Action */}
+          <div className="mt-20 text-center p-12 bg-gradient-to-br from-brand-cream/40 to-brand-terracotta/15 rounded-2xl border border-brand-cream/50">
+            <h3 className="text-4xl font-playfair font-bold text-brand-brown mb-8">Ready to Experience Samburu?</h3>
+            <p className="text-xl text-brand-brown/70 mb-10 max-w-3xl mx-auto leading-relaxed">
+              Join us for an unforgettable safari experience that makes a real difference for wildlife conservation and local communities.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
+                <Button size="lg" className="px-10 py-4 text-lg font-medium">
+                  Book Your Stay
+                </Button>
+              </Link>
+              <Link to="/accommodations">
+                <Button variant="outline" size="lg" className="px-10 py-4 text-lg font-medium">
+                  View Accommodations
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
       
