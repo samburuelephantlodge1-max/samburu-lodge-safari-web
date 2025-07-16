@@ -34,7 +34,7 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Link to="/contact">
+          <Link to="/reservation">
             <Button className="bg-white text-black hover:bg-white/90 px-8 py-4 text-base font-normal tracking-wide uppercase">
               {t('hero.makeReservation')}
             </Button>

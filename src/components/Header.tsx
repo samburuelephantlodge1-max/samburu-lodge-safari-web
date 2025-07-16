@@ -63,12 +63,14 @@ const Header = () => {
           {/* Right Side - Language Switcher & Reservation Button */}
           <div className="hidden lg:flex items-center space-x-4">
             <LanguageSwitcher />
-            <Button 
-              variant="outline" 
-              className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-6 py-2 text-xs uppercase tracking-[0.1em] font-light"
-            >
-              {t('navigation.reserve')}
-            </Button>
+            <Link to="/reservation">
+              <Button 
+                variant="outline" 
+                className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-6 py-2 text-xs uppercase tracking-[0.1em] font-light"
+              >
+                {t('navigation.reserve')}
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -115,9 +117,11 @@ const Header = () => {
                   ))}
                   <div className="pt-8 space-y-4">
                     <LanguageSwitcher />
-                    <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark w-full py-3 text-sm uppercase tracking-[0.1em]">
-                      {t('navigation.makeReservation')}
-                    </Button>
+                    <Link to="/reservation" onClick={() => setIsOpen(false)}>
+                      <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark w-full py-3 text-sm uppercase tracking-[0.1em]">
+                        {t('navigation.makeReservation')}
+                      </Button>
+                    </Link>
                   </div>
                 </nav>
               </div>
