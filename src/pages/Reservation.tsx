@@ -245,9 +245,9 @@ const Reservation = () => {
                   className="w-full p-3 border border-gray-300 rounded-md focus:border-brand-orange focus:ring-brand-orange"
                 >
                   <option value="">Select accommodation type</option>
-                  <option value="luxury-tent">Luxury Safari Tent</option>
-                  <option value="family-tent">Family Safari Tent</option>
-                  <option value="premium-tent">Premium Safari Tent</option>
+                  <option value="single-cottage">Single Cottages</option>
+                  <option value="family-cottage">Family Cottages</option>
+                  <option value="budget-rooms">Budget Rooms (ideal for large groups such as school trips)</option>
                 </select>
               </div>
 
