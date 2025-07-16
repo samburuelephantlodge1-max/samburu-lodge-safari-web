@@ -67,7 +67,7 @@ const Reservation = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/lovable-uploads/7bf2e565-a82b-4a3a-b39e-09a644ad96b9.png')`
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/lovable-uploads/489cc611-ac5e-475b-ac43-b59a6d9fd538.png')`
           }}
         />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
