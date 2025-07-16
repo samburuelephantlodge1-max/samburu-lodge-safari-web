@@ -60,7 +60,7 @@ const Contact = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/xgvyjqzo', {
+      const response = await fetch('https://formspree.io/f/xanbylab', {
         method: 'POST',
         body: formData,
         headers: {
