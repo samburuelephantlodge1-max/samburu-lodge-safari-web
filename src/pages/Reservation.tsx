@@ -245,10 +245,13 @@ const Reservation = () => {
                   className="w-full p-3 border border-gray-300 rounded-md focus:border-brand-orange focus:ring-brand-orange"
                 >
                   <option value="">Select accommodation type</option>
-                  <option value="single-cottage">Single Cottages</option>
-                  <option value="family-cottage">Family Cottages</option>
-                  <option value="budget-rooms">Budget Rooms (ideal for large groups such as school trips)</option>
+                  <option value="single-cottage">Single Cottage</option>
+                  <option value="family-cottage">Family Cottage</option>
+                  <option value="budget-rooms">Budget Rooms</option>
                 </select>
+                <p className="text-sm text-gray-600 mt-1">
+                  * Budget Rooms are ideal for large groups such as school trips
+                </p>
               </div>
 
               {/* Special Requests */}
