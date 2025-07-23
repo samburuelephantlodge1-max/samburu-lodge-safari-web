@@ -1,5 +1,5 @@
 
-import { Instagram, MessageCircle, Linkedin, Twitter, Facebook, Video } from 'lucide-react';
+import { Instagram, MessageCircle, Linkedin, Twitter, Facebook, Music } from 'lucide-react';
 import TripAdvisorWidget from './TripAdvisorWidget';
 
 const Footer = () => {
@@ -87,7 +87,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
                 >
-                  <Video className="w-4 h-4 mr-2" />
+                  <Music className="w-4 h-4 mr-2" />
                   TikTok
                 </a>
                 <a 
