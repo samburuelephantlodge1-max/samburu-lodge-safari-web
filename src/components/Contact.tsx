@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MapPin, Phone, Calendar, Clock, MessageCircle, Link, Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { MapPin, Phone, Calendar, Clock, MessageCircle, Link, Instagram, Linkedin, Twitter, Facebook, Video } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
@@ -243,7 +243,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center text-brand-brown/80 hover:text-brand-orange transition-colors"
                   >
-                    <span className="w-4 h-4 mr-2 text-center text-xs font-bold">TT</span>
+                    <Video className="w-4 h-4 mr-2" />
                     TikTok
                   </a>
                   <a 
