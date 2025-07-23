@@ -1,11 +1,12 @@
 
+import { Instagram, MessageCircle, Linkedin, Twitter, Facebook } from 'lucide-react';
 import TripAdvisorWidget from './TripAdvisorWidget';
 
 const Footer = () => {
   return (
     <footer className="bg-earth-800 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4 font-playfair text-safari-200">
               Samburu Elephant Lodge
@@ -44,6 +45,70 @@ const Footer = () => {
               <p>Phone: +254 110 463 062</p>
               <p>WhatsApp: +254 796 099 657</p>
               <p>Email: info@samburuelephantlodge.co.ke</p>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-safari-200">
+              Follow Us
+            </h4>
+            <div className="space-y-3">
+              <div className="flex flex-col space-y-2">
+                <a 
+                  href="https://api.whatsapp.com/send?phone=254796099657" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  WhatsApp
+                </a>
+                <a 
+                  href="https://instagram.com/samburu_elephant_lodge" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <Instagram className="w-4 h-4 mr-2" />
+                  Instagram
+                </a>
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61575155937407" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <Facebook className="w-4 h-4 mr-2" />
+                  Facebook
+                </a>
+                <a 
+                  href="https://tiktok.com/@samburu.elephant.lodge" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <span className="w-4 h-4 mr-2 text-center text-xs font-bold">TT</span>
+                  TikTok
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/samburu-elephant-lodge" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://x.com/samburuelephant" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <Twitter className="w-4 h-4 mr-2" />
+                  X (Twitter)
+                </a>
+              </div>
             </div>
           </div>
         </div>

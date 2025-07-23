@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MapPin, Phone, Calendar, Clock, MessageCircle, Link } from 'lucide-react';
+import { MapPin, Phone, Calendar, Clock, MessageCircle, Link, Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
@@ -200,6 +200,73 @@ const Contact = () => {
                 <strong>Reservations:</strong> reservations@samburuelephantlodge.co.ke
               </p>
             </div>
+
+            <Card className="bg-white border-brand-cream/50 shadow-sm mt-6">
+              <CardHeader>
+                <CardTitle className="flex items-center text-brand-brown font-playfair">
+                  <MessageCircle className="mr-3 text-brand-orange" />
+                  Follow Us
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 gap-3">
+                  <a 
+                    href="https://api.whatsapp.com/send?phone=254796099657" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-brand-brown/80 hover:text-brand-orange transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    WhatsApp
+                  </a>
+                  <a 
+                    href="https://instagram.com/samburu_elephant_lodge" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-brand-brown/80 hover:text-brand-orange transition-colors"
+                  >
+                    <Instagram className="w-4 h-4 mr-2" />
+                    Instagram
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=61575155937407" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-brand-brown/80 hover:text-brand-orange transition-colors"
+                  >
+                    <Facebook className="w-4 h-4 mr-2" />
+                    Facebook
+                  </a>
+                  <a 
+                    href="https://tiktok.com/@samburu.elephant.lodge" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-brand-brown/80 hover:text-brand-orange transition-colors"
+                  >
+                    <span className="w-4 h-4 mr-2 text-center text-xs font-bold">TT</span>
+                    TikTok
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/in/samburu-elephant-lodge" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-brand-brown/80 hover:text-brand-orange transition-colors"
+                  >
+                    <Linkedin className="w-4 h-4 mr-2" />
+                    LinkedIn
+                  </a>
+                  <a 
+                    href="https://x.com/samburuelephant" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-brand-brown/80 hover:text-brand-orange transition-colors"
+                  >
+                    <Twitter className="w-4 h-4 mr-2" />
+                    X (Twitter)
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Contact Form */}
