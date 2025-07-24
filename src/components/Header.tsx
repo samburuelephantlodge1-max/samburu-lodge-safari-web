@@ -14,16 +14,16 @@ const Header = () => {
 
   const navItems = [
     { name: t('navigation.home'), href: '/', isAnchor: false },
-    { name: t('navigation.about'), href: '#about', isAnchor: true },
+    { name: t('navigation.about'), href: '/#about', isAnchor: false },
     { name: t('navigation.accommodation'), href: '/accommodation', isAnchor: false },
-    { name: t('navigation.experiences'), href: '#experiences', isAnchor: true },
+    { name: t('navigation.experiences'), href: '/experiences', isAnchor: false },
     { name: t('navigation.community'), href: '/community', isAnchor: false },
     { name: t('navigation.blog'), href: '/blog', isAnchor: false },
-    { name: t('navigation.contact'), href: '#contact', isAnchor: true },
+    { name: t('navigation.contact'), href: '/contact', isAnchor: false },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border/10">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -40,23 +40,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-12">
             {navItems.map((item) => (
-              item.isAnchor ? (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-sm uppercase tracking-[0.1em] text-brand-brown hover:text-brand-orange transition-colors duration-300 font-light"
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="text-sm uppercase tracking-[0.1em] text-brand-brown hover:text-brand-orange transition-colors duration-300 font-light"
-                >
-                  {item.name}
-                </Link>
-              )
+              <Link
+                key={item.name}
+                to={item.href}
+                className="text-sm uppercase tracking-[0.1em] text-brand-brown hover:text-brand-orange transition-colors duration-300 font-light"
+              >
+                {item.name}
+              </Link>
             ))}
           </nav>
 
@@ -95,25 +85,14 @@ const Header = () => {
                 </div>
                 <nav className="flex flex-col space-y-8 flex-1">
                   {navItems.map((item) => (
-                    item.isAnchor ? (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="text-2xl font-light text-brand-brown hover:text-brand-orange transition-colors duration-300"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.name}
-                      </a>
-                    ) : (
-                      <Link
-                        key={item.name}
-                        to={item.href}
-                        className="text-2xl font-light text-brand-brown hover:text-brand-orange transition-colors duration-300"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    )
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="text-2xl font-light text-brand-brown hover:text-brand-orange transition-colors duration-300"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
                   ))}
                   <div className="pt-8 space-y-4">
                     <LanguageSwitcher />
