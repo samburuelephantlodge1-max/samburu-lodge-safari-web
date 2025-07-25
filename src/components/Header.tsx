@@ -55,8 +55,7 @@ const Header = () => {
             <LanguageSwitcher />
             <Link to="/reservation">
               <Button 
-                variant="outline" 
-                className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-6 py-2 text-xs uppercase tracking-[0.1em] font-light"
+                className="bg-brand-orange text-white hover:bg-white hover:text-brand-orange border border-brand-orange px-6 py-2 text-xs uppercase tracking-[0.1em] font-light"
               >
                 {t('navigation.reserve')}
               </Button>
