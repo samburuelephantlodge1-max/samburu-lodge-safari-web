@@ -100,26 +100,6 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* Existing Guests Section */}
-        <div className="mb-16">
-          <div className="bg-brand-brown text-white rounded-lg p-8 max-w-4xl mx-auto shadow-lg">
-            <div className="flex items-center justify-center mb-4">
-              <Calendar className="w-8 h-8 mr-3" />
-              <h3 className="text-2xl font-light font-playfair">Already Booked with Us?</h3>
-            </div>
-            <p className="text-lg mb-6 leading-relaxed opacity-90 text-center">
-              Complete your pre-check-in form to ensure a smooth arrival and personalized experience at Samburu Elephant Lodge.
-            </p>
-            <div className="text-center">
-              <a href="/pre-check-in">
-                <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark px-8 py-3 rounded-lg font-medium text-lg">
-                  <Link className="w-5 h-5 mr-2" />
-                  Complete Pre-Check-In Form
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
 
         {/* WhatsApp Priority Section */}
         <div className="mb-16 text-center">
@@ -150,12 +130,23 @@ const Contact = () => {
                   Location
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-brand-brown/80 leading-relaxed">
-                  677 Samburu National Reserve<br />
-                  Isiolo, 60300<br />
-                  Kenya
-                </p>
+               <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-brand-brown font-medium mb-1">Physical Address:</p>
+                    <p className="text-brand-brown/80 leading-relaxed">
+                      Samburu Elephant Lodge<br />
+                      Samburu National Reserve, Samburu
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-brand-brown font-medium mb-1">Postal Address:</p>
+                    <p className="text-brand-brown/80 leading-relaxed">
+                      677 Samburu Elephant Lodge<br />
+                      60300, Isiolo
+                    </p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -386,6 +377,27 @@ const Contact = () => {
           </Card>
         </div>
         
+        {/* Existing Guests Section */}
+        <div className="mt-16 mb-16">
+          <div className="bg-brand-brown text-white rounded-lg p-8 max-w-4xl mx-auto shadow-lg">
+            <div className="flex items-center justify-center mb-4">
+              <Calendar className="w-8 h-8 mr-3" />
+              <h3 className="text-2xl font-light font-playfair">Already Booked with Us?</h3>
+            </div>
+            <p className="text-lg mb-6 leading-relaxed opacity-90 text-center">
+              Complete your pre-check-in form to ensure a smooth arrival and personalized experience at Samburu Elephant Lodge.
+            </p>
+            <div className="text-center">
+              <a href="/pre-check-in">
+                <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark px-8 py-3 rounded-lg font-medium text-lg">
+                  <Link className="w-5 h-5 mr-2" />
+                  Complete Pre-Check-In Form
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* TripAdvisor Review Widget */}
         <div className="mt-16 text-center">
           <div className="bg-white rounded-lg p-8 max-w-4xl mx-auto shadow-sm border border-brand-cream/50">
