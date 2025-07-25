@@ -16,10 +16,10 @@ const ImageShowcase = () => {
       description: "Immerse yourself in luxury while staying connected to nature"
     },
     {
-      src: "/lovable-uploads/36b2f2ef-485e-4fd4-a05f-a719576160a5.png",
-      alt: "Gourmet dining setup with traditional elements",
-      title: "Exceptional Dining",
-      description: "Savor culinary excellence under the African sky"
+      src: "/lovable-uploads/36ad2e76-dde3-4e9c-a48b-5e294fa36629.png",
+      alt: "Elegant cottage interior with canopy bed and seating area",
+      title: "Luxury Accommodations",
+      description: "Rest in comfort surrounded by nature's beauty"
     },
     {
       src: "/lovable-uploads/c9f32bb7-a3cf-48a2-bc89-213182607fec.png",
@@ -28,10 +28,10 @@ const ImageShowcase = () => {
       description: "Rejuvenate your mind and body in nature's embrace"
     },
     {
-      src: "/lovable-uploads/ce24c59d-5deb-4c76-9928-b40b6d1cdd7d.png",
-      alt: "Traditional cottage bedroom with natural lighting",
-      title: "Comfort in the Wild",
-      description: "Experience unparalleled comfort in our luxury tented cottages"
+      src: "/lovable-uploads/b6585bdf-a90e-4fec-a9b5-b9aa0970b174.png",
+      alt: "Spacious cottage with panoramic windows and outdoor terrace",
+      title: "Panoramic Views",
+      description: "Wake up to breathtaking views of the Samburu landscape"
     }
   ];
 
