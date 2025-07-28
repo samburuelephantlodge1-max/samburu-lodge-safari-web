@@ -1,9 +1,19 @@
 
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Plane, Car, MapPin, Clock, Info, CheckCircle } from 'lucide-react';
+import { updatePageMeta } from "@/utils/seo";
 
 const TravelInfo = () => {
+  useEffect(() => {
+    updatePageMeta(
+      "Travel Information - How to Get to Samburu Elephant Lodge",
+      "Complete travel guide to Samburu Elephant Lodge. Flight options, road directions, what to pack, and best times to visit Kenya's Samburu National Reserve.",
+      "/travel-info"
+    );
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />

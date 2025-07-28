@@ -1,12 +1,21 @@
 
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, User, ArrowRight, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { updatePageMeta } from "@/utils/seo";
 
 const Blog = () => {
+  useEffect(() => {
+    updatePageMeta(
+      "Safari Blog - Stories from Samburu Elephant Lodge",
+      "Read stories from the wild, conservation insights, travel tips, and cultural experiences from Samburu Elephant Lodge in Kenya's Samburu National Reserve.",
+      "/blog"
+    );
+  }, []);
   const featuredPost = {
     id: 1,
     title: "More Than a Safari: How Your Stay Changes Lives",

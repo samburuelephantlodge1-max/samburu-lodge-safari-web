@@ -1,9 +1,11 @@
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { updatePageMeta } from '@/utils/seo';
 
 const blogPosts = {
   'best-time-to-visit-samburu': {
@@ -293,6 +295,23 @@ const blogPosts = {
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
+  
+  useEffect(() => {
+    if (slug && blogPosts[slug as keyof typeof blogPosts]) {
+      const post = blogPosts[slug as keyof typeof blogPosts];
+      updatePageMeta(
+        `${post.title} - Samburu Elephant Lodge Blog`,
+        post.excerpt,
+        `/blog/${slug}`
+      );
+    } else {
+      updatePageMeta(
+        "Blog Post Not Found - Samburu Elephant Lodge",
+        "The blog post you're looking for doesn't exist. Explore our other safari stories and wildlife conservation insights.",
+        `/blog/${slug}`
+      );
+    }
+  }, [slug]);
   
   if (!slug || !blogPosts[slug as keyof typeof blogPosts]) {
     return (

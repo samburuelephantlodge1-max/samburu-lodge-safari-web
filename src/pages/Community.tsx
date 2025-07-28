@@ -1,9 +1,18 @@
 
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
+import { updatePageMeta } from "@/utils/seo";
 
 const Community = () => {
+  useEffect(() => {
+    updatePageMeta(
+      "Community & Conservation - Samburu Elephant Lodge Impact",
+      "Learn about our community initiatives, wildlife conservation efforts, and sustainable tourism practices that protect Samburu's ecosystem and empower local communities.",
+      "/community"
+    );
+  }, []);
   const initiatives = [
     {
       title: "Education Support",

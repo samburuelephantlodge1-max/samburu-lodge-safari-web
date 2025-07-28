@@ -1,8 +1,17 @@
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
+import { updatePageMeta } from "@/utils/seo";
 
 const Accommodation = () => {
+  useEffect(() => {
+    updatePageMeta(
+      "Luxury Safari Accommodation - Samburu Elephant Lodge Cottages",
+      "Discover our luxury tented cottages and family accommodations. Solar-powered amenities, private outdoor spaces, and stunning views in Samburu National Reserve.",
+      "/accommodation"
+    );
+  }, []);
   const accommodations = [
     {
       title: "Simba",

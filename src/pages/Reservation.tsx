@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { updatePageMeta } from "@/utils/seo";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -19,6 +20,14 @@ const Reservation = () => {
   const [checkIn, setCheckIn] = useState<Date>();
   const [checkOut, setCheckOut] = useState<Date>();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    updatePageMeta(
+      "Make a Reservation - Book Your Safari at Samburu Elephant Lodge",
+      "Book your luxury safari experience at Samburu Elephant Lodge. Reserve your cottage, plan your adventure, and discover Kenya's wildlife in Samburu National Reserve.",
+      "/reservation"
+    );
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
