@@ -68,6 +68,17 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      id: 6,
+      title: "The Hidden History of Archers Post: Where Butterflies Took Flight and Legends Took Root",
+      excerpt: "Discover the fascinating history behind Archers Post, where butterflies connected distant worlds and legends were born among the Samburu people.",
+      author: "Cultural Heritage Team",
+      date: "July 29, 2025",
+      category: "History & Culture",
+      image: "/lovable-uploads/e6e202c5-3302-4061-a9f7-e80e7465d60a.png",
+      readTime: "7 min read",
+      slug: "hidden-history-archers-post"
+    },
+    {
       id: 4,
       title: "Sustainable Safari: Our Eco-Tourism Commitment",
       excerpt: "Learn how Samburu Elephant Lodge contributes to conservation efforts and empowers local communities through responsible tourism practices.",

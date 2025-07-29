@@ -8,6 +8,52 @@ import { Button } from '@/components/ui/button';
 import { updatePageMeta } from '@/utils/seo';
 
 const blogPosts = {
+  'hidden-history-archers-post': {
+    title: 'The Hidden History of Archers Post: Where Butterflies Took Flight and Legends Took Root',
+    excerpt: 'Discover the fascinating history behind Archers Post, where butterflies connected distant worlds and legends were born among the Samburu people.',
+    author: 'Cultural Heritage Team',
+    date: 'July 29, 2025',
+    readTime: '7 min read',
+    category: 'History & Culture',
+    image: '/lovable-uploads/e6e202c5-3302-4061-a9f7-e80e7465d60a.png',
+    content: `
+      <div class="prose prose-lg max-w-none">
+        <p class="lead">When you arrive at Samburu Elephant Lodge, tucked within the raw beauty of Samburu National Reserve, you're instantly swept into a world of silence, sky, and wildness. But just beyond the reserve's gates lies a small, seemingly quiet settlement with a name that holds far more than meets the eye: Archers Post.</p>
+        
+        <p>At first, the name may stir images of bows and arrows—a warrior town, perhaps. But the real story is far more nuanced, and much more poetic.</p>
+        
+        <h2>A Man Named Archer</h2>
+        <p>To uncover the roots of Archers Post, we step back over a century to the early 1900s, a time when British colonial officers were mapping, naming, and controlling much of Kenya's northern frontier. One such officer, George Archer, was sent to the region to establish a presence on behalf of the colonial government.</p>
+        
+        <p>He arrived at a strategic site previously used by the Boma Trading Company—an isolated compound that had since been abandoned but remained intact. Archer made it his base, and over time, the location came to be known as Archer's Post—a name carried forward not for what he did, but simply for who he was.</p>
+        
+        <p>And yet, if we stopped there, the story would feel cold. It would be just another colonial marker in a landscape filled with them. But in truth, there's another narrative—one far more delicate and filled with wonder.</p>
+        
+        <h2>The Butterfly Connection</h2>
+        <p>George Archer had an uncle named Sir Fredrick Johnson, who lived in Mombasa. Unlike his military nephew, Fredrick was a collector—not of stamps or coins, but of butterflies. He had a fascination with Kenya's lepidopteran wonders, and the untouched north was, to him, a paradise waiting to be explored.</p>
+        
+        <p>So, in letter after letter, Fredrick implored George to send butterflies—strange ones, rare ones, beautiful ones. And George, though a soldier by duty, became a collector by circumstance. While patrolling the dry Samburu plains or navigating the Ewaso Nyiro riverbanks, he began capturing specimens—brilliant blues, flickering oranges, pale whites—and packing them for the coast.</p>
+        
+        <p>These butterflies, carried in fragile boxes, brought not only color to Fredrick's collection but stories. Stories of a place that few Europeans had ventured into. Stories of a people who lived in harmony with this rugged land.</p>
+        
+        <h2>The Butterfly People</h2>
+        <p>Fredrick became enchanted—not just by the insects, but by what his nephew described: the Samburu people, adorned in beads and dressed in bold colors, moving through their landscape with a grace that seemed untouched by time.</p>
+        
+        <p>In one of his many journal entries, Fredrick reportedly referred to the Samburu as "the Butterfly People." It wasn't a scientific name, nor was it meant for classification. It was an impression—a poetic observation from a man who saw in the Samburu the same qualities that he so adored in butterflies: color, elegance, and quiet resilience.</p>
+        
+        <p>That nickname, while never official, stuck in certain circles. And it still resonates with those who observe closely. Watch the way Samburu women walk in procession, or how warriors leap and sing in celebration. Their movement, pride, and style are more than cultural expressions—they are living art.</p>
+        
+        <h2>A Name with Layers</h2>
+        <p>So while Archers Post may, on the surface, sound like another colonial remnant, it's actually layered with stories—of a military post that became a settlement, of butterflies that bridged the highlands and the coast, and of a people who caught the attention of a collector not for conquest, but for beauty.</p>
+        
+        <p>Today, the town remains a gateway—into Samburu, into history, and into a more thoughtful way of seeing the world.</p>
+        
+        <blockquote>
+          <p>"Next time you pass through Archers Post, slow down. Let the dust rise behind your vehicle, and look around with new eyes. This is not just a place on a map. It is a story still fluttering on the wind, written in wings and woven into the land."</p>
+        </blockquote>
+      </div>
+    `
+  },
   'best-time-to-visit-samburu': {
     title: 'Best Time to Visit Samburu National Reserve',
     excerpt: 'Planning your safari? Discover the optimal seasons for wildlife viewing, weather conditions, and unforgettable experiences in Samburu.',
