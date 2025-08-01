@@ -18,7 +18,7 @@ const blogPosts = {
     image: '/lovable-uploads/e6e202c5-3302-4061-a9f7-e80e7465d60a.png',
     content: `
       <div class="prose prose-lg max-w-none">
-        <p class="lead">When you arrive at Samburu Elephant Lodge, tucked within the raw beauty of Samburu National Reserve, you're instantly swept into a world of silence, sky, and wildness. But just beyond the reserve's gates lies a small, seemingly quiet settlement with a name that holds far more than meets the eye: Archers Post.</p>
+        <p>When you arrive at Samburu Elephant Lodge, tucked within the raw beauty of Samburu National Reserve, you're instantly swept into a world of silence, sky, and wildness. But just beyond the reserve's gates lies a small, seemingly quiet settlement with a name that holds far more than meets the eye: Archers Post.</p>
         
         <p>At first, the name may stir images of bows and arrows—a warrior town, perhaps. But the real story is far more nuanced, and much more poetic.</p>
         
@@ -48,9 +48,7 @@ const blogPosts = {
         
         <p>Today, the town remains a gateway—into Samburu, into history, and into a more thoughtful way of seeing the world.</p>
         
-        <blockquote>
-          <p>"Next time you pass through Archers Post, slow down. Let the dust rise behind your vehicle, and look around with new eyes. This is not just a place on a map. It is a story still fluttering on the wind, written in wings and woven into the land."</p>
-        </blockquote>
+        <p>Next time you pass through Archers Post, slow down. Let the dust rise behind your vehicle, and look around with new eyes. This is not just a place on a map. It is a story still fluttering on the wind, written in wings and woven into the land.</p>
       </div>
     `
   },
