@@ -61,56 +61,55 @@ const blogPosts = {
     category: 'Safari Guide',
     image: '/lovable-uploads/349d6974-edd6-418e-8d19-2ef6ff2075ae.png',
     content: `
-      <h2>Why Visit Samburu?</h2>
-      
-      <p>Located in northern Kenya, Samburu National Reserve offers one of the most authentic safari experiences in Africa. Unlike the more popular southern parks, Samburu is rugged, remote, and uncrowded — ideal for travelers who want a deeper connection with nature.</p>
-      
-      <p>This semi-arid landscape along the Ewaso Ng'iro River is home to an extraordinary array of wildlife, including the rare "Samburu Special Five": Grevy's zebra, reticulated giraffe, Somali ostrich, Beisa oryx, and the long-necked gerenuk.</p>
-      
-      <p>You'll also find elephants, lions, leopards, crocodiles, and over 450 bird species. Add in rich Samburu culture and dramatic terrain, and you have a truly unforgettable destination.</p>
+      <div class="prose prose-lg max-w-none">
+        <p>Located in northern Kenya, Samburu National Reserve offers one of the most authentic safari experiences in Africa. Unlike the more popular southern parks, Samburu is rugged, remote, and uncrowded — ideal for travelers who want a deeper connection with nature.</p>
+        
+        <p>This semi-arid landscape along the Ewaso Ng'iro River is home to an extraordinary array of wildlife, including the rare "Samburu Special Five": Grevy's zebra, reticulated giraffe, Somali ostrich, Beisa oryx, and the long-necked gerenuk.</p>
+        
+        <p>You'll also find elephants, lions, leopards, crocodiles, and over 450 bird species. Add in rich Samburu culture and dramatic terrain, and you have a truly unforgettable destination.</p>
 
-      <h2>Best Time to Visit: A Seasonal Overview</h2>
-      
-      <h3>Dry Season (June to October and January to February)</h3>
-      
-      <p><strong>Best for:</strong> Wildlife viewing, photography, comfortable game drives</p>
-      
-      <ul>
-        <li>Animals congregate at the river and other water sources, making sightings more frequent and dramatic.</li>
-        <li>Clear skies provide excellent light for photography.</li>
-        <li>Roads are dry and accessible, making it ideal for game drives and walking safaris.</li>
-        <li>Cooler mornings and evenings ensure comfortable travel conditions.</li>
-      </ul>
-      
-      <p><strong>Why go now:</strong> This is peak safari season. If you're hoping to spot predators or want the best overall game viewing, this is the ideal time to visit.</p>
+        <h2>Best Time to Visit: A Seasonal Overview</h2>
+        
+        <h3>Dry Season (June to October and January to February)</h3>
+        
+        <p><strong>Best for:</strong> Wildlife viewing, photography, comfortable game drives</p>
+        
+        <ul>
+          <li>Animals congregate at the river and other water sources, making sightings more frequent and dramatic.</li>
+          <li>Clear skies provide excellent light for photography.</li>
+          <li>Roads are dry and accessible, making it ideal for game drives and walking safaris.</li>
+          <li>Cooler mornings and evenings ensure comfortable travel conditions.</li>
+        </ul>
+        
+        <p><strong>Why go now:</strong> This is peak safari season. If you're hoping to spot predators or want the best overall game viewing, this is the ideal time to visit.</p>
 
-      <h3>Shoulder Season (March, June, September, December)</h3>
-      
-      <p><strong>Best for:</strong> Fewer tourists, good wildlife, lower rates</p>
-      
-      <ul>
-        <li>Wildlife is still active, especially in March and December.</li>
-        <li>The landscape starts to green, offering beautiful contrast for photos.</li>
-        <li>Quieter camps and lodges enhance the experience.</li>
-        <li>Rates are often more affordable before and after peak periods.</li>
-      </ul>
-      
-      <p><strong>Why go now:</strong> Perfect for travelers who want a balanced safari experience — fewer crowds, great sightings, and a bit of everything Samburu has to offer.</p>
+        <h3>Shoulder Season (March, June, September, December)</h3>
+        
+        <p><strong>Best for:</strong> Fewer tourists, good wildlife, lower rates</p>
+        
+        <ul>
+          <li>Wildlife is still active, especially in March and December.</li>
+          <li>The landscape starts to green, offering beautiful contrast for photos.</li>
+          <li>Quieter camps and lodges enhance the experience.</li>
+          <li>Rates are often more affordable before and after peak periods.</li>
+        </ul>
+        
+        <p><strong>Why go now:</strong> Perfect for travelers who want a balanced safari experience — fewer crowds, great sightings, and a bit of everything Samburu has to offer.</p>
 
-      <h3>Wet Season (March to May and October to November)</h3>
-      
-      <p><strong>Best for:</strong> Birdwatching, lush scenery, baby animals</p>
-      
-      <ul>
-        <li>A paradise for birdwatchers, with migratory species joining resident birds.</li>
-        <li>This is calving season for many animals, offering rare glimpses of newborns.</li>
-        <li>The park transforms into a green oasis, perfect for landscape photography.</li>
-        <li>Fewer visitors mean a more peaceful safari at reduced costs.</li>
-      </ul>
-      
-      <p><strong>What to consider:</strong> Heavy rains can make some roads difficult to navigate, and wildlife may spread out due to abundant water. Still, for those seeking beauty, birds, and serenity, this is a rewarding time to visit.</p>
+        <h3>Wet Season (March to May and October to November)</h3>
+        
+        <p><strong>Best for:</strong> Birdwatching, lush scenery, baby animals</p>
+        
+        <ul>
+          <li>A paradise for birdwatchers, with migratory species joining resident birds.</li>
+          <li>This is calving season for many animals, offering rare glimpses of newborns.</li>
+          <li>The park transforms into a green oasis, perfect for landscape photography.</li>
+          <li>Fewer visitors mean a more peaceful safari at reduced costs.</li>
+        </ul>
+        
+        <p><strong>What to consider:</strong> Heavy rains can make some roads difficult to navigate, and wildlife may spread out due to abundant water. Still, for those seeking beauty, birds, and serenity, this is a rewarding time to visit.</p>
 
-      <h2>Month-by-Month Safari Guide</h2>
+        <h2>Month-by-Month Safari Guide</h2>
         <div class="overflow-x-auto my-8">
           <table class="w-full border-collapse border border-brand-cream">
             <thead>
@@ -138,36 +137,35 @@ const blogPosts = {
           </table>
         </div>
 
-      <h2>What to Do in Samburu (All Year Round)</h2>
-      
-      <h3>Game Drives</h3>
-      <p>The best way to see Samburu's wildlife, especially early morning and late afternoon. Dry season drives offer the most consistent big game sightings.</p>
+        <h2>What to Do in Samburu (All Year Round)</h2>
+        
+        <h3>Game Drives</h3>
+        <p>The best way to see Samburu's wildlife, especially early morning and late afternoon. Dry season drives offer the most consistent big game sightings.</p>
 
-      <h3>Walking Safaris</h3>
-      <p>Available in dry months, these are a great way to get close to nature and explore the landscape on foot with a professional guide.</p>
+        <h3>Walking Safaris</h3>
+        <p>Available in dry months, these are a great way to get close to nature and explore the landscape on foot with a professional guide.</p>
 
-      <h3>Birdwatching</h3>
-      <p>With over 450 species, Samburu is a birder's dream — especially during the rainy season when migratory birds arrive.</p>
+        <h3>Birdwatching</h3>
+        <p>With over 450 species, Samburu is a birder's dream — especially during the rainy season when migratory birds arrive.</p>
 
-      <h3>Cultural Tours</h3>
-      <p>Visit Samburu villages and engage with the traditions, music, and crafts of one of Kenya's most iconic communities. Cultural experiences are available all year.</p>
+        <h3>Cultural Tours</h3>
+        <p>Visit Samburu villages and engage with the traditions, music, and crafts of one of Kenya's most iconic communities. Cultural experiences are available all year.</p>
 
-      <h3>Photography</h3>
-      <p>From dry, sun-baked vistas to lush, green backdrops during the rains, Samburu offers an ever-changing palette for photographers.</p>
+        <h3>Photography</h3>
+        <p>From dry, sun-baked vistas to lush, green backdrops during the rains, Samburu offers an ever-changing palette for photographers.</p>
 
-      <h2>When Should You Go?</h2>
-      
-      <ul>
-        <li><strong>For first-time safaris or big game focus</strong> — choose the dry season: June to October or January to February.</li>
-        <li><strong>For scenic beauty, birds, and baby animals</strong> — visit during the wet months: March to May or October to November.</li>
-        <li><strong>For balance and value</strong> — travel in March, early June, September, or December.</li>
-      </ul>
+        <h2>When Should You Go?</h2>
+        
+        <ul>
+          <li><strong>For first-time safaris or big game focus</strong> — choose the dry season: June to October or January to February.</li>
+          <li><strong>For scenic beauty, birds, and baby animals</strong> — visit during the wet months: March to May or October to November.</li>
+          <li><strong>For balance and value</strong> — travel in March, early June, September, or December.</li>
+        </ul>
 
-      <h2>Final Thoughts</h2>
-      
-      <p>Samburu isn't just a destination — it's a feeling. Wild, soulful, and less explored than Kenya's southern parks, it rewards the curious traveler with stunning scenery, rare wildlife, and a deep sense of place. No matter when you go, Samburu will leave you with memories that last a lifetime.</p>
-      
-      <p>Plan wisely, travel responsibly, and let the magic of Samburu unfold.</p>
+        <p>Samburu isn't just a destination — it's a feeling. Wild, soulful, and less explored than Kenya's southern parks, it rewards the curious traveler with stunning scenery, rare wildlife, and a deep sense of place. No matter when you go, Samburu will leave you with memories that last a lifetime.</p>
+        
+        <p>Plan wisely, travel responsibly, and let the magic of Samburu unfold.</p>
+      </div>
     `
   },
   'sustainable-safari-eco-tourism': {
@@ -179,31 +177,32 @@ const blogPosts = {
     category: 'Conservation',
     image: '/lovable-uploads/7ca574ad-4fab-422e-b0e8-19d05f205a0f.png',
     content: `
-      <h2>1. Eco-Luxury Rooted in Conservation</h2>
-      
-      <p>Samburu Elephant Lodge offers more than just a place to stay—it's a model of responsible tourism that blends comfort with a deep respect for the environment. Every aspect of the lodge is designed to minimize ecological impact while enhancing the guest experience.</p>
-      
-      <ul>
-        <li>Powered largely by solar energy and built using locally sourced materials.</li>
-        <li>Employs water-saving systems and responsible waste management.</li>
-        <li>Operates with a low-impact philosophy to preserve the surrounding ecosystem.</li>
-      </ul>
-      
-      <p>By staying at the lodge, guests enjoy sustainable luxury without compromising the integrity of Samburu's wild landscape.</p>
+      <div class="prose prose-lg max-w-none">
+        <h2>Eco-Luxury Rooted in Conservation</h2>
+        
+        <p>Samburu Elephant Lodge offers more than just a place to stay—it's a model of responsible tourism that blends comfort with a deep respect for the environment. Every aspect of the lodge is designed to minimize ecological impact while enhancing the guest experience.</p>
+        
+        <ul>
+          <li>Powered largely by solar energy and built using locally sourced materials.</li>
+          <li>Employs water-saving systems and responsible waste management.</li>
+          <li>Operates with a low-impact philosophy to preserve the surrounding ecosystem.</li>
+        </ul>
+        
+        <p>By staying at the lodge, guests enjoy sustainable luxury without compromising the integrity of Samburu's wild landscape.</p>
 
-      <h2>2. Active Participation in Wildlife Conservation</h2>
-      
-      <p>The lodge plays an important role in protecting the wildlife that makes Samburu so special.</p>
-      
-      <ul>
-        <li>Supports the conservation of the "Samburu Special Five" and other endangered species like the Grevy's zebra.</li>
-        <li>Partners with local conservancies and non-profits involved in anti-poaching efforts and habitat preservation.</li>
-        <li>Contributes to wildlife monitoring projects, including tracking of elephants, big cats, and bird species.</li>
-      </ul>
-      
-      <p>A portion of every stay goes directly toward funding these critical conservation initiatives.</p>
+        <h2>Active Participation in Wildlife Conservation</h2>
+        
+        <p>The lodge plays an important role in protecting the wildlife that makes Samburu so special.</p>
+        
+        <ul>
+          <li>Supports the conservation of the "Samburu Special Five" and other endangered species like the Grevy's zebra.</li>
+          <li>Partners with local conservancies and non-profits involved in anti-poaching efforts and habitat preservation.</li>
+          <li>Contributes to wildlife monitoring projects, including tracking of elephants, big cats, and bird species.</li>
+        </ul>
+        
+        <p>A portion of every stay goes directly toward funding these critical conservation initiatives.</p>
 
-        <h2>3. Community Empowerment Through Tourism</h2>
+        <h2>Community Empowerment Through Tourism</h2>
         <p>At the heart of Samburu Elephant Lodge's eco-tourism mission is a commitment to uplifting local communities.</p>
         
         <ul>
@@ -214,7 +213,7 @@ const blogPosts = {
         
         <p>Tourism at Samburu Elephant Lodge isn't just about seeing Africa—it's about engaging with it respectfully and responsibly.</p>
 
-        <h2>4. Community-Led Conservation in Action</h2>
+        <h2>Community-Led Conservation in Action</h2>
         <p>The lodge works closely with neighboring conservancies such as the Westgate Community Conservancy to ensure that conservation and community development go hand-in-hand.</p>
         
         <ul>
@@ -225,7 +224,7 @@ const blogPosts = {
         
         <p>This collaborative model empowers local people to become stewards of the land, ensuring long-term sustainability.</p>
 
-        <h2>5. Beyond Sustainability: Regenerative Tourism</h2>
+        <h2>Beyond Sustainability: Regenerative Tourism</h2>
         <p>Samburu Elephant Lodge follows the principles of regenerative tourism, aiming not only to preserve the environment but to improve it.</p>
         
         <ul>
@@ -240,18 +239,15 @@ const blogPosts = {
         <p>Every guest who chooses Samburu Elephant Lodge becomes a partner in its mission.</p>
         
         <ul>
-          <li>Your visit helps fund conservation and anti-poaching efforts.</li>
-          <li>Your stay supports local employment and skills development.</li>
-          <li>Your interest in local culture strengthens pride and preservation efforts.</li>
-          <li>Your environmental awareness adds momentum to sustainable travel across Africa.</li>
+          <li>Follow Leave No Trace principles during game drives and walking safaris.</li>
+          <li>Support local artisans and communities by purchasing authentic crafts and products.</li>
+          <li>Engage respectfully with Samburu culture and traditions during village visits.</li>
+          <li>Consider extending your impact by donating to the lodge's conservation partners.</li>
         </ul>
         
-        <p>Responsible tourism isn't just an idea here—it's a lived experience.</p>
+        <p>Your presence and mindful choices directly contribute to the protection of this incredible ecosystem and the prosperity of the people who depend on it.</p>
 
-        <h2>Final Thoughts</h2>
-        <p>Samburu Elephant Lodge is redefining what it means to go on safari. It's not just about witnessing wildlife—it's about protecting it. Not just about comfort—but community. And not just sustainability—but regeneration.</p>
-        
-        <p>By choosing to travel consciously, you help protect Samburu's beauty, support its people, and inspire a new kind of adventure—one that leaves the world better than you found it.</p>
+        <p>Together, we're creating a future where tourism serves the planet, wildlife, and the people who call this beautiful place home.</p>
       </div>
     `
   },
