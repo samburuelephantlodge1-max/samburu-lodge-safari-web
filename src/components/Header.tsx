@@ -95,9 +95,9 @@ const Header = () => {
                   ))}
                   <div className="pt-8 space-y-4">
                     <LanguageSwitcher />
-                    <Link to="/reservation" onClick={() => setIsOpen(false)}>
+                    <Link to="https://samburu.netlify.app/experiences" onClick={() => setIsOpen(false)}>
                       <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark w-full py-3 text-sm uppercase tracking-[0.1em]">
-                        {t('navigation.makeReservation')}
+                       <!-- {t('navigation.makeReservation')}-->
                       </Button>
                     </Link>
                   </div>
