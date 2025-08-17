@@ -39,12 +39,12 @@ const Hero = () => {
               {t('hero.makeReservation')}
             </Button>
           </Link>
-          <Link to="/experiences">
+          <Link to="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge">
             <Button 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-base font-normal tracking-wide uppercase bg-transparent"
             >
-              {t('hero.exploreExperiences')}
+              <!--{t('hero.exploreExperiences')}-->
             </Button>
           </Link>
         </div>
