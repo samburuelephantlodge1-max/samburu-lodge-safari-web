@@ -34,17 +34,17 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Link to="/reservation">
+          <Link to="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge">
             <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark px-8 py-4 text-base font-normal tracking-wide uppercase">
-              {t('hero.makeReservation')}
+              <!--{t('hero.makeReservation')}-->
             </Button>
           </Link>
-          <Link to="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge">
+          <Link to="/experiences">
             <Button 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-base font-normal tracking-wide uppercase bg-transparent"
             >
-              <!--{t('hero.exploreExperiences')}-->
+              {t('hero.exploreExperiences')}
             </Button>
           </Link>
         </div>
