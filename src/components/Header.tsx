@@ -53,7 +53,7 @@ const Header = () => {
           {/* Right Side - Language Switcher & Reservation Button */}
           <div className="hidden lg:flex items-center space-x-4">
             <LanguageSwitcher />
-            <Link to="/reservation">
+            <Link to="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge" target="_blank" rel="noopener noreferrer">
               <Button 
                 className="bg-brand-orange text-white hover:bg-white hover:text-brand-orange border border-brand-orange px-6 py-2 text-xs uppercase tracking-[0.1em] font-light"
               >

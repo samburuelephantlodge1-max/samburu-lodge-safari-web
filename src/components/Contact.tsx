@@ -167,7 +167,6 @@ const Contact = () => {
                   </p>
                 </div>
                 <p className="text-brand-brown/80">Kenya: +254 110 463 062</p>
-                <p className="text-brand-brown/80">UK: +44 7377 308 560</p>
               </CardContent>
             </Card>
 
