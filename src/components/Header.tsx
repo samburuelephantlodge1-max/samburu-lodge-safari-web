@@ -96,8 +96,8 @@ const Header = () => {
                   <div className="pt-8 space-y-4">
                     <LanguageSwitcher />
                     <Link to="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge" onClick={() => setIsOpen(false)}>
-                      <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark w-full py-3 text-sm uppercase tracking-[0.1em]">
-                       <!-- {t('navigation.makeReservation')}-->
+                       <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark w-full py-3 text-sm uppercase tracking-[0.1em]">
+                        {t('navigation.makeReservation')}
                       </Button>
                     </Link>
                   </div>
