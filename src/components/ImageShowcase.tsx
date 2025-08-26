@@ -103,7 +103,7 @@ const ImageShowcase = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge" target="_blank" rel="noopener noreferrer">
+              <Link to="/reservation">
                 <Button className="bg-brand-orange hover:bg-brand-orange-dark text-white px-8 py-3 text-sm uppercase tracking-[0.1em] font-light rounded-xl">
                   Reserve Your Stay <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
