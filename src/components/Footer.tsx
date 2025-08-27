@@ -1,5 +1,5 @@
 
-import { Instagram, MessageCircle, Linkedin, Twitter, Facebook, Music } from 'lucide-react';
+import { Instagram, MessageCircle, Linkedin, Twitter, Facebook, Music, Download } from 'lucide-react';
 import TripAdvisorWidget from './TripAdvisorWidget';
 
 const Footer = () => {
@@ -32,6 +32,17 @@ const Footer = () => {
               <li><a href="#experiences" className="text-earth-200 hover:text-safari-200 transition-colors">Experiences</a></li>
               <li><a href="/community" className="text-earth-200 hover:text-safari-200 transition-colors">Community</a></li>
               <li><a href="#contact" className="text-earth-200 hover:text-safari-200 transition-colors">Contact</a></li>
+              <li>
+                <a 
+                  href="/lovable-uploads/October Holidays-STO Offers.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  October Holidays Offers (PDF)
+                </a>
+              </li>
             </ul>
           </div>
           
