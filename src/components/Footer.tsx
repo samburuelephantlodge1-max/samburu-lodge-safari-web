@@ -40,7 +40,7 @@ const Footer = () => {
                   className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
                 >
                   <Download className="w-4 h-4 mr-2" />
-                  October Holidays Offers (PDF)
+                  October Holidays STO Offers
                 </a>
               </li>
             </ul>
