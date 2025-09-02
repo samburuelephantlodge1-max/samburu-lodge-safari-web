@@ -14,6 +14,7 @@ import ContactPage from "./pages/Contact";
 import ExperiencesPage from "./pages/Experiences";
 import PreCheckIn from "./pages/PreCheckIn";
 import Reservation from "./pages/Reservation";
+import HolidayOffers from "./pages/HolidayOffers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/reservation" element={<Reservation />} />
           <Route path="/pre-check-in" element={<PreCheckIn />} />
+          <Route path="/holiday-offers" element={<HolidayOffers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
