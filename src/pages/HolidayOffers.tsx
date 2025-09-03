@@ -1,10 +1,13 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TripAdvisorWidget from "@/components/TripAdvisorWidget";
 import { updatePageMeta } from "@/utils/seo";
-import { ChevronDown, Calendar, Star, Gift } from "lucide-react";
+import { ChevronDown, Calendar, Star, Gift, Clock, Shield, Award, MapPin } from "lucide-react";
 
 const HolidayOffers = () => {
   useEffect(() => {
@@ -13,6 +16,51 @@ const HolidayOffers = () => {
       "Celebrate October holidays, Black Friday, and festive season with exclusive safari offers at Samburu Elephant Lodge. Book your luxury safari experience today.",
       "/holiday-offers"
     );
+
+    // Add structured data for Google Ads
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Samburu Elephant Lodge",
+      "description": "Luxury safari lodge offering exclusive holiday packages",
+      "url": "https://samburuelephantlodge.co.ke/holiday-offers",
+      "telephone": "+254796099657",
+      "email": "reservations@samburuelephantlodge.co.ke",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Samburu National Reserve",
+        "addressCountry": "Kenya"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "October Holiday Special",
+          "price": "9500",
+          "priceCurrency": "KES",
+          "availability": "https://schema.org/InStock",
+          "validThrough": "2024-10-31"
+        },
+        {
+          "@type": "Offer", 
+          "name": "Black Friday Safari Deal",
+          "price": "8000",
+          "priceCurrency": "KES",
+          "availability": "https://schema.org/InStock",
+          "validThrough": "2024-11-30"
+        }
+      ]
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+    };
   }, []);
 
   return (
@@ -28,13 +76,36 @@ const HolidayOffers = () => {
           }}
         />
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
+          {/* Urgency Badge */}
+          <Badge className="bg-red-600 text-white mb-6 px-4 py-2 text-sm font-semibold animate-pulse">
+            <Clock className="w-4 h-4 mr-2" />
+            LIMITED TIME OFFERS - ENDS DECEMBER 31ST
+          </Badge>
+          
           <h1 className="text-5xl md:text-7xl font-playfair font-light mb-6 animate-fade-in">
             Your Samburu Safari, <br />
             <span className="text-safari-300">Now More Affordable</span>
           </h1>
-          <p className="text-xl md:text-2xl font-inter font-light mb-12 max-w-3xl mx-auto animate-fade-in">
+          <p className="text-xl md:text-2xl font-inter font-light mb-8 max-w-3xl mx-auto animate-fade-in">
             Celebrate October holidays, Black Friday, and the Festive season with exclusive offers
           </p>
+          
+          {/* Trust Signals */}
+          <div className="flex justify-center items-center gap-6 mb-12 flex-wrap">
+            <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+              <Shield className="w-5 h-5 mr-2 text-green-400" />
+              <span className="text-sm">Secure Booking</span>
+            </div>
+            <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+              <Award className="w-5 h-5 mr-2 text-yellow-400" />
+              <span className="text-sm">TripAdvisor Rated</span>
+            </div>
+            <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+              <MapPin className="w-5 h-5 mr-2 text-blue-400" />
+              <span className="text-sm">Samburu National Reserve</span>
+            </div>
+          </div>
+          
           <Button 
             size="lg" 
             className="bg-safari-500 hover:bg-safari-600 text-white px-12 py-4 text-lg font-inter tracking-wide animate-fade-in"
@@ -57,6 +128,9 @@ const HolidayOffers = () => {
                 Mashujaa Day & Diwali Escapes
               </h2>
             </div>
+            <Badge className="bg-orange-600 text-white mb-4 px-3 py-1 text-sm">
+              OCTOBER SPECIAL - SAVE 20%
+            </Badge>
             <p className="text-xl text-muted-foreground font-inter max-w-2xl mx-auto">
               Celebrate Kenya's Mashujaa Day (20th October) and Diwali (29th October) with discounted packages.
             </p>
@@ -110,6 +184,9 @@ const HolidayOffers = () => {
                 Unmissable Black Friday Savings
               </h2>
             </div>
+            <Badge className="bg-black text-white mb-4 px-3 py-1 text-sm animate-pulse">
+              BLACK FRIDAY - MASSIVE SAVINGS
+            </Badge>
             <p className="text-xl text-muted-foreground font-inter max-w-2xl mx-auto">
               For one weekend only, enjoy massive discounts on luxury Samburu escapes.
             </p>
@@ -160,6 +237,9 @@ const HolidayOffers = () => {
             <h2 className="text-4xl md:text-5xl font-playfair text-foreground mb-4">
               Festive in Samburu
             </h2>
+            <Badge className="bg-green-600 text-white mb-4 px-3 py-1 text-sm">
+              FESTIVE SEASON PACKAGES
+            </Badge>
             <p className="text-xl text-muted-foreground font-inter max-w-2xl mx-auto">
               Celebrate the holidays in style with a package that fits your festive mood.
             </p>
@@ -267,6 +347,128 @@ const HolidayOffers = () => {
         </div>
       </section>
 
+      {/* TripAdvisor Widget */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-3xl font-playfair text-foreground mb-8">What Our Guests Say</h2>
+          <TripAdvisorWidget />
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-earth-50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-playfair text-foreground mb-4">Guest Experiences</h2>
+            <p className="text-xl text-muted-foreground font-inter">Real stories from our safari adventures</p>
+          </div>
+          
+          <div className="grid lg:grid-cols-3 gap-8">
+            <Card className="bg-card shadow-lg border-0">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Incredible wildlife encounters and exceptional service. The lodge exceeded all our expectations!"
+                </p>
+                <p className="font-semibold text-foreground">- Sarah & John M.</p>
+                <p className="text-sm text-muted-foreground">October 2024</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-card shadow-lg border-0">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Perfect location for game drives. Amazing elephant sightings right from our cottage!"
+                </p>
+                <p className="font-semibold text-foreground">- Michael K.</p>
+                <p className="text-sm text-muted-foreground">September 2024</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-card shadow-lg border-0">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Luxury in the wilderness. Professional guides and unforgettable memories!"
+                </p>
+                <p className="font-semibold text-foreground">- Emma L.</p>
+                <p className="text-sm text-muted-foreground">November 2024</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-playfair text-foreground mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-muted-foreground font-inter">Everything you need to know about our offers</p>
+          </div>
+          
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left font-playfair text-lg">
+                Are these rates per person or per room?
+              </AccordionTrigger>
+              <AccordionContent className="font-inter text-muted-foreground">
+                All rates shown are per person sharing per night on full board basis. Children below 12 years pay 50% of the adult rate.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left font-playfair text-lg">
+                What does Full Board (FB) include?
+              </AccordionTrigger>
+              <AccordionContent className="font-inter text-muted-foreground">
+                Full Board includes breakfast, lunch, dinner, and game drives. Beverages during meals and selected activities are included.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left font-playfair text-lg">
+                How do I make a booking?
+              </AccordionTrigger>
+              <AccordionContent className="font-inter text-muted-foreground">
+                Contact us via WhatsApp at +254 796 099 657 or email reservations@samburuelephantlodge.co.ke. Our team will assist with availability and confirmation.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-left font-playfair text-lg">
+                What's the cancellation policy?
+              </AccordionTrigger>
+              <AccordionContent className="font-inter text-muted-foreground">
+                Cancellation policies vary by offer and season. Please contact our reservations team for specific terms when booking.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-left font-playfair text-lg">
+                Are game drives included in these packages?
+              </AccordionTrigger>
+              <AccordionContent className="font-inter text-muted-foreground">
+                Yes, daily game drives are included in all our packages. We offer morning and evening drives with experienced guides.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </section>
+
       {/* Final Call to Action */}
       <section 
         className="py-32 relative overflow-hidden"
@@ -277,6 +479,10 @@ const HolidayOffers = () => {
         }}
       >
         <div className="container mx-auto px-4 max-w-4xl text-center text-white relative z-10">
+          <Badge className="bg-red-600 text-white mb-6 px-4 py-2 text-sm animate-pulse">
+            <Clock className="w-4 h-4 mr-2" />
+            HURRY - LIMITED AVAILABILITY
+          </Badge>
           <h2 className="text-4xl md:text-6xl font-playfair font-light mb-8 animate-fade-in">
             Book Early, Save More
           </h2>
