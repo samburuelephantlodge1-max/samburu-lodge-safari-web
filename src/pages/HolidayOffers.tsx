@@ -295,21 +295,21 @@ const HolidayOffers = () => {
       {/* Footer with Contact Info */}
       <section className="py-16 bg-earth-900 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-lg font-playfair mb-4">Contact Reservations</h3>
-              <p className="font-inter text-earth-200">reservations@samburuelephantlodge.com</p>
-              <p className="font-inter text-earth-200">+254 xxx xxx xxx</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-playfair mb-4">Quick Booking</h3>
-              <Button variant="outline" className="text-white border-white hover:bg-white hover:text-earth-900">
-                Access Booking System
-              </Button>
-            </div>
-            <div>
-              <h3 className="text-lg font-playfair mb-4">Follow Us</h3>
-              <p className="font-inter text-earth-200">Social Media Links</p>
+          <div className="max-w-md mx-auto">
+            <h3 className="text-xl font-playfair mb-6">Contact Reservations</h3>
+            <div className="space-y-3 font-inter text-earth-200">
+              <p className="text-lg">
+                <span className="text-white font-medium">WhatsApp (Preferred):</span><br />
+                +254 796 099 657
+              </p>
+              <p className="text-lg">
+                <span className="text-white font-medium">Kenya:</span><br />
+                +254 110 463 062
+              </p>
+              <p className="text-lg">
+                <span className="text-white font-medium">Email:</span><br />
+                reservations@samburuelephantlodge.co.ke
+              </p>
             </div>
           </div>
         </div>
