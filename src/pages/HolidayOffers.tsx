@@ -157,12 +157,6 @@ const HolidayOffers = () => {
                 <p className="text-muted-foreground font-inter">Children below 12 years pay 50% of the adult rate</p>
               </div>
               
-              {/* Poster Upload Area */}
-              <div className="mt-8 p-8 border-2 border-dashed border-safari-200 rounded-lg text-center bg-safari-50/30">
-                <Gift className="w-12 h-12 text-safari-400 mx-auto mb-4" />
-                <p className="text-safari-600 font-inter">October Holiday Offer Poster</p>
-                <p className="text-sm text-safari-400 mt-2">Space reserved for promotional material</p>
-              </div>
               
               <div className="text-center pt-6">
                 <Button className="bg-earth-600 hover:bg-earth-700 text-white px-8 py-3">
@@ -213,12 +207,6 @@ const HolidayOffers = () => {
                 <p className="text-muted-foreground font-inter">Children below 12 years pay 50% of the adult rate</p>
               </div>
               
-              {/* Poster Upload Area */}
-              <div className="mt-8 p-8 border-2 border-dashed border-safari-200 rounded-lg text-center bg-safari-50/30">
-                <Gift className="w-12 h-12 text-safari-400 mx-auto mb-4" />
-                <p className="text-safari-600 font-inter">Black Friday Deal Poster</p>
-                <p className="text-sm text-safari-400 mt-2">Space reserved for promotional material</p>
-              </div>
               
               <div className="text-center pt-6">
                 <Button className="bg-foreground hover:bg-foreground/90 text-background px-8 py-3">
@@ -261,13 +249,6 @@ const HolidayOffers = () => {
                   <p className="text-sm text-safari-600">Non-Resident (per person sharing/night FB)</p>
                 </div>
                 
-                {/* Poster Area */}
-                <div className="p-6 border-2 border-dashed border-safari-200 rounded-lg text-center bg-safari-50/30">
-                  <div className="w-16 h-16 bg-safari-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Gift className="w-8 h-8 text-safari-500" />
-                  </div>
-                  <p className="text-safari-600 text-sm">Cottage Poster</p>
-                </div>
                 
                 <Button className="w-full bg-safari-500 hover:bg-safari-600 text-white">
                   Book Now
@@ -290,13 +271,6 @@ const HolidayOffers = () => {
                   <p className="text-sm text-safari-600">Non-Resident (per person sharing/night FB)</p>
                 </div>
                 
-                {/* Poster Area */}
-                <div className="p-6 border-2 border-dashed border-safari-200 rounded-lg text-center bg-safari-50/30">
-                  <div className="w-16 h-16 bg-safari-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Gift className="w-8 h-8 text-safari-500" />
-                  </div>
-                  <p className="text-safari-600 text-sm">Camping Poster</p>
-                </div>
                 
                 <Button className="w-full bg-safari-500 hover:bg-safari-600 text-white">
                   Book Now
@@ -319,13 +293,6 @@ const HolidayOffers = () => {
                   <p className="text-sm text-safari-600">Non-Resident (per person sharing/night FB)</p>
                 </div>
                 
-                {/* Poster Area */}
-                <div className="p-6 border-2 border-dashed border-safari-200 rounded-lg text-center bg-safari-50/30">
-                  <div className="w-16 h-16 bg-safari-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Gift className="w-8 h-8 text-safari-500" />
-                  </div>
-                  <p className="text-safari-600 text-sm">Lodge Poster</p>
-                </div>
                 
                 <Button className="w-full bg-safari-500 hover:bg-safari-600 text-white">
                   Book Now
@@ -338,11 +305,13 @@ const HolidayOffers = () => {
             <p className="text-muted-foreground font-inter">Children below 12 years pay 50% of the adult rate</p>
           </div>
 
-          {/* Main Festive Poster Area */}
-          <div className="mt-12 p-12 border-2 border-dashed border-safari-200 rounded-lg text-center bg-safari-50/30">
-            <Gift className="w-16 h-16 text-safari-400 mx-auto mb-4" />
-            <p className="text-safari-600 font-inter text-lg">Festive Season Campaign Poster</p>
-            <p className="text-sm text-safari-400 mt-2">Main promotional space for festive packages</p>
+          {/* Festive Season Poster */}
+          <div className="mt-12 text-center">
+            <img 
+              src="/lovable-uploads/07a95bbd-0a51-40f1-8999-3a0d2a642df5.png" 
+              alt="Festive Season Safari Package - December 1st 2025 to January 5th 2026" 
+              className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
