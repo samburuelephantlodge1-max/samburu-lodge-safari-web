@@ -118,46 +118,44 @@ const Blog = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-b from-brand-cream to-white">
+      <section className="relative pt-32 pb-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <p className="text-sm uppercase tracking-[0.3em] text-brand-brown mb-4">Blog</p>
-            <h1 className="text-4xl md:text-5xl font-light text-brand-brown mb-6 font-playfair">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-light text-slate-900 mb-6 font-playfair leading-tight">
               Stories from the Wild
             </h1>
-            <p className="text-lg text-brand-brown/80 leading-relaxed font-light mb-6">
-              Discover insights, stories, and expertise from our team about wildlife, culture, 
-              conservation, and the extraordinary experiences that await at Samburu Elephant Lodge.
+            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light mb-8">
+              Safari insights, wildlife stories, and cultural experiences from Samburu Elephant Lodge
             </p>
             <a 
               href="/blog/rss.xml" 
-              className="inline-flex items-center text-brand-orange hover:text-brand-orange-dark transition-colors text-sm uppercase tracking-[0.1em] font-light"
+              className="inline-flex items-center text-brand-orange hover:text-brand-orange-dark transition-colors text-sm uppercase tracking-wider font-medium"
             >
               <Rss className="w-4 h-4 mr-2" />
-              Subscribe via RSS
+              Subscribe to RSS Feed
             </a>
           </div>
         </div>
       </section>
 
       {/* Featured Post Full Content */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <article className="max-w-4xl mx-auto">
-            <div className="relative h-96 overflow-hidden mb-12 rounded-lg">
+            <div className="relative h-80 md:h-96 overflow-hidden mb-12 rounded-xl shadow-lg">
               <img 
                 src={featuredPost.image}
                 alt={featuredPost.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-4 left-4 bg-brand-orange text-white px-3 py-1">
-                <span className="text-xs uppercase tracking-[0.1em]">
+              <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
+                <span className="text-sm font-medium">
                   {featuredPost.category}
                 </span>
               </div>
             </div>
             
-            <div className="flex items-center text-sm text-brand-brown/60 mb-6 space-x-4">
+            <div className="flex flex-wrap items-center text-sm text-slate-500 mb-8 gap-6">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
                 {featuredPost.date}
@@ -166,15 +164,21 @@ const Blog = () => {
                 <User className="w-4 h-4 mr-2" />
                 {featuredPost.author}
               </div>
-              <span>{featuredPost.readTime}</span>
+              <span className="bg-slate-100 px-3 py-1 rounded-full text-xs font-medium">
+                {featuredPost.readTime}
+              </span>
             </div>
             
-            <h1 className="text-3xl md:text-4xl font-light text-brand-brown mb-8 font-playfair leading-tight">
+            <h1 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 font-playfair leading-tight">
               {featuredPost.title}
             </h1>
             
+            <div className="text-lg md:text-xl text-slate-600 leading-relaxed mb-12 font-light">
+              {featuredPost.excerpt}
+            </div>
+            
             <div 
-              className="text-brand-brown/80 leading-relaxed font-light"
+              className="prose prose-xl max-w-none prose-slate prose-headings:font-playfair prose-headings:font-light prose-headings:text-slate-900 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-slate-700 prose-p:leading-relaxed prose-p:mb-6 prose-ul:mb-8 prose-li:mb-2"
               dangerouslySetInnerHTML={{ __html: featuredPost.fullContent }}
             />
           </article>
@@ -182,11 +186,11 @@ const Blog = () => {
       </section>
 
       {/* RSS Feed Widget */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-light text-brand-brown mb-4 font-playfair">Latest Stories</h2>
-            <p className="text-brand-brown/80 font-light">Stay updated with our latest safari stories and insights</p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4 font-playfair">Latest Stories</h2>
+            <p className="text-lg text-slate-600 font-light">Stay updated with our latest safari stories and insights</p>
           </div>
           <div className="max-w-4xl mx-auto">
             <div className='sk-ww-rss-feed' data-embed-id='25596115'></div>
@@ -196,29 +200,29 @@ const Blog = () => {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-20 bg-brand-cream/30">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-light text-brand-brown mb-4 font-playfair">More Stories</h2>
+            <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4 font-playfair">More Stories</h2>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="bg-white border-0 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <Card key={post.id} className="bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden rounded-xl">
                 <div className="relative h-64 overflow-hidden">
                   <img 
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 left-4 bg-white px-3 py-1">
-                    <span className="text-xs uppercase tracking-[0.1em] text-brand-brown">
+                  <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-full">
+                    <span className="text-xs font-medium text-slate-700">
                       {post.category}
                     </span>
                   </div>
                 </div>
                 <CardHeader className="p-8">
-                  <div className="flex items-center text-sm text-brand-brown/60 mb-4 space-x-4">
+                  <div className="flex flex-wrap items-center text-sm text-slate-500 mb-6 gap-4">
                     <div className="flex items-center">
                       <Calendar className="w-4 h-4 mr-2" />
                       {post.date}
@@ -227,20 +231,22 @@ const Blog = () => {
                       <User className="w-4 h-4 mr-2" />
                       {post.author}
                     </div>
-                    <span>{post.readTime}</span>
+                    <span className="bg-slate-100 px-3 py-1 rounded-full text-xs font-medium">
+                      {post.readTime}
+                    </span>
                   </div>
-                  <CardTitle className="text-xl font-light text-brand-brown mb-4 font-playfair leading-tight">
+                  <CardTitle className="text-2xl font-light text-slate-900 mb-4 font-playfair leading-tight">
                     {post.title}
                   </CardTitle>
-                  <p className="text-brand-brown/80 leading-relaxed font-light mb-6">
+                  <p className="text-slate-600 leading-relaxed font-light mb-8 text-base">
                     {post.excerpt}
                   </p>
                   <Link to={`/blog/${post.slug}`}>
                     <Button 
                       variant="ghost" 
-                      className="p-0 h-auto text-brand-orange hover:text-brand-orange-dark font-light text-sm uppercase tracking-[0.1em]"
+                      className="p-0 h-auto text-brand-orange hover:text-brand-orange-dark font-medium text-sm group"
                     >
-                      Read More <ArrowRight className="w-4 h-4 ml-2" />
+                      Read Full Article <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
                 </CardHeader>

@@ -409,14 +409,14 @@ const BlogPost = () => {
   
   if (!slug || !blogPosts[slug as keyof typeof blogPosts]) {
     return (
-      <div className="min-h-screen bg-brand-cream/30">
+      <div className="min-h-screen bg-white">
         <Header />
-        <div className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-4xl font-playfair text-brand-brown mb-4">Blog Post Not Found</h1>
-          <p className="text-brand-brown/70 mb-8">The blog post you're looking for doesn't exist.</p>
+        <div className="container mx-auto px-4 py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 font-playfair">Article Not Found</h1>
+          <p className="text-xl text-slate-600 mb-12 leading-relaxed max-w-md mx-auto">The article you're looking for doesn't exist or has been moved.</p>
           <Link to="/blog">
-            <Button variant="outline" className="inline-flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4" />
+            <Button className="bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-3">
+              <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Blog
             </Button>
           </Link>
@@ -429,91 +429,98 @@ const BlogPost = () => {
   const post = blogPosts[slug as keyof typeof blogPosts];
 
   return (
-    <div className="min-h-screen bg-brand-cream/30">
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${post.image}')` }}
-        >
-          <div className="absolute inset-0 bg-black/40"></div>
-        </div>
-        
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <div className="inline-block bg-brand-terracotta text-white px-3 py-1 rounded-full text-sm font-medium mb-4">
-            {post.category}
-          </div>
-          <h1 className="text-4xl md:text-6xl font-playfair mb-6 leading-tight">
-            {post.title}
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-            {post.excerpt}
-          </p>
-          
-          <div className="flex items-center justify-center gap-6 text-white/80">
-            <div className="flex items-center gap-2">
-              <User className="h-4 w-4" />
-              <span>{post.author}</span>
+      <section className="pt-32 pb-16 bg-white">
+        <div className="container mx-auto px-4">
+          <article className="max-w-4xl mx-auto">
+            <div className="relative h-80 md:h-96 overflow-hidden mb-12 rounded-xl shadow-lg">
+              <img 
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
+                <span className="text-sm font-medium">
+                  {post.category}
+                </span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Calendar className="h-4 w-4" />
-              <span>{post.date}</span>
+            
+            <div className="flex flex-wrap items-center text-sm text-slate-500 mb-8 gap-6">
+              <div className="flex items-center">
+                <Calendar className="w-4 h-4 mr-2" />
+                {post.date}
+              </div>
+              <div className="flex items-center">
+                <User className="w-4 h-4 mr-2" />
+                {post.author}
+              </div>
+              <span className="bg-slate-100 px-3 py-1 rounded-full text-xs font-medium">
+                {post.readTime}
+              </span>
             </div>
-            <span>{post.readTime}</span>
-          </div>
+            
+            <h1 className="text-4xl md:text-6xl font-light text-slate-900 mb-8 font-playfair leading-tight">
+              {post.title}
+            </h1>
+            
+            <div className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light mb-16 border-l-4 border-brand-orange pl-6">
+              {post.excerpt}
+            </div>
+          </article>
         </div>
       </section>
 
       {/* Blog Content */}
-      <section className="py-20">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="mb-12">
+      <section className="pb-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto mb-12">
             <Link to="/blog">
-              <Button variant="outline" className="inline-flex items-center gap-2 hover:bg-brand-cream/50 transition-colors">
-                <ArrowLeft className="h-4 w-4" />
-                Back to Blog
+              <Button 
+                variant="outline" 
+                className="border-slate-300 text-slate-700 hover:bg-slate-100 px-6 py-3"
+              >
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back to All Stories
               </Button>
             </Link>
           </div>
           
-          <div 
-            className="bg-white rounded-xl p-16 md:p-24 shadow-lg border border-brand-cream/30 
-              prose prose-xl max-w-none leading-relaxed
-              [&_h2]:font-playfair [&_h2]:text-brand-brown [&_h2]:text-4xl [&_h2]:leading-tight [&_h2]:mb-16 [&_h2]:mt-32 [&_h2]:first:mt-0
-              [&_h3]:font-playfair [&_h3]:text-brand-brown [&_h3]:text-3xl [&_h3]:mb-12 [&_h3]:mt-24
-              [&_p]:text-lg [&_p]:leading-loose [&_p]:mb-12 [&_p]:text-brand-brown/80
-              [&_ul]:mb-16 [&_ul]:mt-8 [&_li]:mb-6 [&_li]:text-lg [&_li]:leading-relaxed [&_li]:text-brand-brown/80
-              [&_strong]:text-brand-brown [&_strong]:font-semibold
-              [&_table]:border-brand-cream/50 [&_table]:mb-20 [&_table]:mt-12 [&_table]:shadow-md [&_table]:rounded-lg [&_table]:overflow-hidden
-              [&_th]:bg-brand-cream/40 [&_th]:text-brand-brown [&_th]:font-semibold [&_th]:p-4
-              [&_td]:text-brand-brown/80 [&_td]:p-4 [&_td]:border-brand-cream/30
-              [&_blockquote]:border-l-4 [&_blockquote]:border-brand-terracotta [&_blockquote]:bg-brand-cream/20 
-              [&_blockquote]:px-8 [&_blockquote]:py-8 [&_blockquote]:rounded-r-lg [&_blockquote]:my-20 [&_blockquote]:text-brand-brown/90 [&_blockquote]:text-xl [&_blockquote]:italic
-              [&_.bg-brand-cream\\/30]:bg-brand-cream/20 [&_.bg-brand-cream\\/30]:p-10 [&_.bg-brand-cream\\/30]:rounded-xl [&_.bg-brand-cream\\/30]:my-16
-              [&_.grid]:gap-8 [&_.text-center]:mb-0
-              first-letter:text-7xl first-letter:font-bold first-letter:text-brand-terracotta first-letter:float-left first-letter:mr-4 first-letter:mt-2 first-letter:leading-none"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
+          <div className="max-w-4xl mx-auto">
+            <div 
+              className="prose prose-xl max-w-none prose-slate prose-headings:font-playfair prose-headings:font-light prose-headings:text-slate-900 prose-h2:text-4xl prose-h2:mt-20 prose-h2:mb-10 prose-h3:text-2xl prose-h3:mt-16 prose-h3:mb-8 prose-p:text-slate-700 prose-p:leading-relaxed prose-p:mb-8 prose-p:text-lg prose-ul:mb-12 prose-li:mb-4 prose-li:text-lg prose-strong:text-slate-900 prose-table:my-16 prose-blockquote:border-l-4 prose-blockquote:border-brand-orange prose-blockquote:bg-slate-50 prose-blockquote:px-8 prose-blockquote:py-6 prose-blockquote:rounded-r-lg prose-blockquote:my-12 prose-blockquote:text-slate-700 prose-blockquote:text-xl prose-blockquote:italic prose-blockquote:not-italic"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
+          </div>
 
           {/* Call to Action */}
-          <div className="mt-20 text-center p-12 bg-gradient-to-br from-brand-cream/40 to-brand-terracotta/15 rounded-2xl border border-brand-cream/50">
-            <h3 className="text-4xl font-playfair font-bold text-brand-brown mb-8">Ready to Experience Samburu?</h3>
-            <p className="text-xl text-brand-brown/70 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Join us for an unforgettable safari experience that makes a real difference for wildlife conservation and local communities.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" className="px-10 py-4 text-lg font-medium">
-                  Book Your Stay
-                </Button>
-              </Link>
-              <Link to="/accommodations">
-                <Button variant="outline" size="lg" className="px-10 py-4 text-lg font-medium">
-                  View Accommodations
-                </Button>
-              </Link>
+          <div className="max-w-4xl mx-auto mt-20">
+            <div className="bg-slate-50 p-12 md:p-16 rounded-2xl border border-slate-100">
+              <h3 className="text-3xl md:text-4xl font-light text-slate-900 mb-6 font-playfair text-center">
+                Ready for Your Own Safari Adventure?
+              </h3>
+              <p className="text-xl text-slate-600 leading-relaxed font-light mb-12 text-center max-w-2xl mx-auto">
+                Experience the magic of Samburu firsthand. Book your stay at Samburu Elephant Lodge 
+                and create memories that will last a lifetime.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Link to="/reservation">
+                  <Button className="bg-brand-orange hover:bg-brand-orange-dark text-white px-8 py-4 text-lg font-medium">
+                    Book Your Stay
+                  </Button>
+                </Link>
+                <Link to="/accommodation">
+                  <Button 
+                    variant="outline" 
+                    className="border-slate-300 text-slate-700 hover:bg-slate-100 px-8 py-4 text-lg"
+                  >
+                    View Accommodations
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
