@@ -181,6 +181,20 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* RSS Feed Widget */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-light text-brand-brown mb-4 font-playfair">Latest Stories</h2>
+            <p className="text-brand-brown/80 font-light">Stay updated with our latest safari stories and insights</p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className='sk-ww-rss-feed' data-embed-id='25596115'></div>
+            <script src='https://widgets.sociablekit.com/rss-feed/widget.js' defer></script>
+          </div>
+        </div>
+      </section>
+
       {/* Blog Posts Grid */}
       <section className="py-20 bg-brand-cream/30">
         <div className="container mx-auto px-4">
