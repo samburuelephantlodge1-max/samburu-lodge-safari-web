@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Calendar, User, ArrowRight, Heart } from 'lucide-react';
+import { Calendar, User, ArrowRight, Heart, Rss } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { updatePageMeta } from "@/utils/seo";
 
@@ -114,10 +114,17 @@ const Blog = () => {
             <h1 className="text-4xl md:text-5xl font-light text-brand-brown mb-6 font-playfair">
               Stories from the Wild
             </h1>
-            <p className="text-lg text-brand-brown/80 leading-relaxed font-light">
+            <p className="text-lg text-brand-brown/80 leading-relaxed font-light mb-6">
               Discover insights, stories, and expertise from our team about wildlife, culture, 
               conservation, and the extraordinary experiences that await at Samburu Elephant Lodge.
             </p>
+            <a 
+              href="/blog/rss.xml" 
+              className="inline-flex items-center text-brand-orange hover:text-brand-orange-dark transition-colors text-sm uppercase tracking-[0.1em] font-light"
+            >
+              <Rss className="w-4 h-4 mr-2" />
+              Subscribe via RSS
+            </a>
           </div>
         </div>
       </section>

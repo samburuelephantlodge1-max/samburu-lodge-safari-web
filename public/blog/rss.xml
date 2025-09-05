@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Safari Blog - Stories from Samburu Elephant Lodge</title>
+    <link>https://samburuelephantlodge.co.ke/blog</link>
+    <description>Read stories from the wild, conservation insights, travel tips, and cultural experiences from Samburu Elephant Lodge in Kenya's Samburu National Reserve.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Jul 2025 12:00:00 +0000</lastBuildDate>
+    <managingEditor>info@samburuelephantlodge.co.ke (SEL Team)</managingEditor>
+    <webMaster>info@samburuelephantlodge.co.ke (SEL Team)</webMaster>
+    <image>
+      <url>https://samburuelephantlodge.co.ke/lovable-uploads/839d48f9-9c6c-47c0-9f2c-b0533e1d4f8c.png</url>
+      <title>Safari Blog - Stories from Samburu Elephant Lodge</title>
+      <link>https://samburuelephantlodge.co.ke/blog</link>
+    </image>
+    <atom:link href="https://samburuelephantlodge.co.ke/blog/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Hidden History of Archers Post: Where Butterflies Took Flight and Legends Took Root</title>
+      <link>https://samburuelephantlodge.co.ke/blog/hidden-history-archers-post</link>
+      <guid>https://samburuelephantlodge.co.ke/blog/hidden-history-archers-post</guid>
+      <pubDate>Tue, 29 Jul 2025 12:00:00 +0000</pubDate>
+      <description>Discover the fascinating history behind Archers Post, where butterflies connected distant worlds and legends were born among the Samburu people.</description>
+      <author>info@samburuelephantlodge.co.ke (Cultural Heritage Team)</author>
+      <category>History &amp; Culture</category>
+    </item>
+    
+    <item>
+      <title>Sustainable Safari: Our Eco-Tourism Commitment</title>
+      <link>https://samburuelephantlodge.co.ke/blog/sustainable-safari-eco-tourism</link>
+      <guid>https://samburuelephantlodge.co.ke/blog/sustainable-safari-eco-tourism</guid>
+      <pubDate>Thu, 05 Dec 2024 12:00:00 +0000</pubDate>
+      <description>Learn how Samburu Elephant Lodge contributes to conservation efforts and empowers local communities through responsible tourism practices.</description>
+      <author>info@samburuelephantlodge.co.ke (Conservation Team)</author>
+      <category>Conservation</category>
+    </item>
+    
+    <item>
+      <title>Best Time to Visit Samburu National Reserve</title>
+      <link>https://samburuelephantlodge.co.ke/blog/best-time-to-visit-samburu</link>
+      <guid>https://samburuelephantlodge.co.ke/blog/best-time-to-visit-samburu</guid>
+      <pubDate>Thu, 28 Nov 2024 12:00:00 +0000</pubDate>
+      <description>Planning your safari? Discover the optimal seasons for wildlife viewing, weather conditions, and unforgettable experiences in Samburu.</description>
+      <author>info@samburuelephantlodge.co.ke (Travel Planning Team)</author>
+      <category>Travel Tips</category>
+    </item>
+  </channel>
+</rss>
