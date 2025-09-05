@@ -5,7 +5,7 @@
     <link>https://samburuelephantlodge.co.ke/blog</link>
     <description>Read stories from the wild, conservation insights, travel tips, and cultural experiences from Samburu Elephant Lodge in Kenya's Samburu National Reserve.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jul 2025 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2025 12:00:00 +0000</lastBuildDate>
     <managingEditor>info@samburuelephantlodge.co.ke (SEL Team)</managingEditor>
     <webMaster>info@samburuelephantlodge.co.ke (SEL Team)</webMaster>
     <image>
@@ -14,6 +14,16 @@
       <link>https://samburuelephantlodge.co.ke/blog</link>
     </image>
     <atom:link href="https://samburuelephantlodge.co.ke/blog/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Do's and Don'ts for an Unforgettable Samburu Safari</title>
+      <link>https://samburuelephantlodge.co.ke/blog/samburu-safari-dos-and-donts</link>
+      <guid>https://samburuelephantlodge.co.ke/blog/samburu-safari-dos-and-donts</guid>
+      <pubDate>Thu, 15 Aug 2025 12:00:00 +0000</pubDate>
+      <description>Planning a safari is exciting, but each destination has its own rhythm. Learn essential tips to make the most of your stay at Samburu Elephant Lodge.</description>
+      <author>info@samburuelephantlodge.co.ke (Safari Guide Team)</author>
+      <category>Safari Tips</category>
+    </item>
     
     <item>
       <title>The Hidden History of Archers Post: Where Butterflies Took Flight and Legends Took Root</title>

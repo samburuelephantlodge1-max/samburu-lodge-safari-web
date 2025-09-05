@@ -68,6 +68,17 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      id: 7,
+      title: "Do's and Don'ts for an Unforgettable Samburu Safari",
+      excerpt: "Planning a safari is exciting, but each destination has its own rhythm. Learn essential tips to make the most of your stay at Samburu Elephant Lodge.",
+      author: "Safari Guide Team",
+      date: "August 15, 2025",
+      category: "Safari Tips",
+      image: "/lovable-uploads/576d29f0-3a37-4d26-9a8d-569970375393.png",
+      readTime: "6 min read",
+      slug: "samburu-safari-dos-and-donts"
+    },
+    {
       id: 6,
       title: "The Hidden History of Archers Post: Where Butterflies Took Flight and Legends Took Root",
       excerpt: "Discover the fascinating history behind Archers Post, where butterflies connected distant worlds and legends were born among the Samburu people.",

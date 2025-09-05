@@ -8,6 +8,60 @@ import { Button } from '@/components/ui/button';
 import { updatePageMeta } from '@/utils/seo';
 
 const blogPosts = {
+  'samburu-safari-dos-and-donts': {
+    title: "Do's and Don'ts for an Unforgettable Samburu Safari",
+    excerpt: "Planning a safari is exciting, but each destination has its own rhythm. Learn essential tips to make the most of your stay at Samburu Elephant Lodge.",
+    author: "Safari Guide Team",
+    date: "August 15, 2025",
+    readTime: "6 min read",
+    category: "Safari Tips",
+    image: "/lovable-uploads/576d29f0-3a37-4d26-9a8d-569970375393.png",
+    content: `
+      <div class="prose prose-lg max-w-none">
+        <p class="lead">Planning a safari is exciting, but each destination in Kenya has its own rhythm. Samburu offers a more intimate experience than the busier Maasai Mara, with unique wildlife, stunning landscapes, and rich culture. To make the most of your stay at Samburu Elephant Lodge, here are a few essential do's and don'ts.</p>
+        
+        <h2>Do's</h2>
+        
+        <h3>Do Pack Smartly</h3>
+        <p>Light, breathable clothing in neutral colors works best. Don't forget sunscreen, a wide-brimmed hat, insect repellent, and binoculars for spotting wildlife.</p>
+        
+        <h3>Do Wake Up Early</h3>
+        <p>The best game drives are in the cool morning hours when animals are most active. Sunrise in Samburu is an experience in itself, with golden light painting the savannah.</p>
+        
+        <h3>Do Respect the Samburu Culture</h3>
+        <p>When visiting local villages, always ask before taking photos and show interest in their traditions. A little respect goes a long way in creating genuine connections.</p>
+        
+        <h3>Do Keep Your Camera Ready</h3>
+        <p>Samburu is home to the famous Special Five: Grevy's zebra, reticulated giraffe, Somali ostrich, gerenuk, and beisa oryx. You never know when you'll come across them, sometimes right outside the lodge.</p>
+        
+        <h3>Do Take Time to Unplug</h3>
+        <p>Embrace the peace of the river, the star-filled skies, and the sounds of elephants nearby. Samburu is the perfect place to disconnect from city life and reconnect with nature.</p>
+        
+        <h2>Don'ts</h2>
+        
+        <h3>Don't Wander Off Alone</h3>
+        <p>For your safety, always stick with your guide during walks or drives. Wildlife can be unpredictable, and guides know the terrain best.</p>
+        
+        <h3>Don't Feed the Animals</h3>
+        <p>It may feel tempting to share food with wildlife, but feeding disrupts their natural behavior and can be harmful.</p>
+        
+        <h3>Don't Overpack on Expectations</h3>
+        <p>Samburu is not Maasai Mara, and that's its beauty. Here you'll find exclusivity, unique species, and fewer vehicles at sightings, making each encounter feel special.</p>
+        
+        <h3>Don't Ignore the Heat</h3>
+        <p>The sun in Samburu can be intense. Hydrate often, wear light clothes, and seek shade during the hottest hours.</p>
+        
+        <h3>Don't Forget to Look Up</h3>
+        <p>Beyond wildlife on the ground, Samburu's night skies are among the clearest in Kenya. Stargazing from the lodge deck is a memory you won't forget.</p>
+        
+        <h2>Conclusion</h2>
+        <p>A safari in Samburu is unlike any other, offering rare wildlife, cultural richness, and a slower, more intimate pace. By following these simple do's and don'ts, you'll make the most of your stay at Samburu Elephant Lodge and leave with memories to last a lifetime.</p>
+        
+        <h3>Ready to Experience Samburu?</h3>
+        <p><strong>Book your Samburu escape today and let Samburu Elephant Lodge be your home in the wild.</strong></p>
+      </div>
+    `
+  },
   'hidden-history-archers-post': {
     title: 'The Hidden History of Archers Post: Where Butterflies Took Flight and Legends Took Root',
     excerpt: 'Discover the fascinating history behind Archers Post, where butterflies connected distant worlds and legends were born among the Samburu people.',
