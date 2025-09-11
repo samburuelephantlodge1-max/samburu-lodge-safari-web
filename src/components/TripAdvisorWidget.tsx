@@ -29,7 +29,7 @@ const TripAdvisorWidget = () => {
               <img 
                 src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg" 
                 alt="TripAdvisor" 
-                className="max-h-8"
+                className="max-h-8 brightness-0 invert"
               />
             </a>
           </li>
