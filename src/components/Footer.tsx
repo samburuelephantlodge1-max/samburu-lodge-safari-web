@@ -32,6 +32,17 @@ const Footer = () => {
               <li><a href="#experiences" className="text-earth-200 hover:text-safari-200 transition-colors">Experiences</a></li>
               <li><a href="/community" className="text-earth-200 hover:text-safari-200 transition-colors">Community</a></li>
               <li><a href="#contact" className="text-earth-200 hover:text-safari-200 transition-colors">Contact</a></li>
+              <li>
+                <a 
+                  href="/lovable-uploads/Special Offers – Valid till 30th November 2025.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-earth-200 hover:text-safari-200 transition-colors"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Special Offers (Nov 2025)
+                </a>
+              </li>
             </ul>
           </div>
           
