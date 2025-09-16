@@ -344,39 +344,6 @@ const HolidayOffers = () => {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-16 bg-gradient-to-r from-primary to-primary/80 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-playfair mb-6">
-            Ready to Book Your Holiday Escape?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Contact us now to secure your preferred dates and packages
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button 
-              size="lg" 
-              className="bg-white hover:bg-white/90 text-primary px-8 py-4 text-lg font-semibold shadow-xl"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Call +254 796 099 657
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp Us
-            </Button>
-          </div>
-          
-          <p className="text-lg opacity-75">
-            📧 Email: reservations@samburuelephantlodge.co.ke
-          </p>
-        </div>
-      </section>
 
       <Footer />
     </div>
