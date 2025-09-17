@@ -32,6 +32,7 @@ const Footer = () => {
               <li><a href="#experiences" className="text-earth-200 hover:text-safari-200 transition-colors">Experiences</a></li>
               <li><a href="/community" className="text-earth-200 hover:text-safari-200 transition-colors">Community</a></li>
               <li><a href="#contact" className="text-earth-200 hover:text-safari-200 transition-colors">Contact</a></li>
+              <li><a href="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge" target="_blank" rel="noopener noreferrer" className="text-earth-200 hover:text-safari-200 transition-colors">Direct Booking</a></li>
             </ul>
           </div>
           
