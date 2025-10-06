@@ -364,6 +364,13 @@ const Contact = () => {
                 {/* Spam protection: honeypot field (invisible to users) */}
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 
+                <div className="text-sm text-brand-brown/70 mb-4">
+                  By submitting this form, you agree to our{" "}
+                  <a href="/privacy-policy" className="text-brand-orange hover:underline">
+                    Privacy Policy
+                  </a>
+                </div>
+                
                 <Button 
                   type="submit"
                   disabled={isSubmitting}
