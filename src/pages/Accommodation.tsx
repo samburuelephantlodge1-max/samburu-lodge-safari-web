@@ -3,6 +3,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
 import { updatePageMeta } from "@/utils/seo";
+import { Accessibility } from "lucide-react";
+
+// PWD Accessibility Images
+import pwdImage1 from "@/assets/pwd/_MG_0746.JPG";
+import pwdImage2 from "@/assets/pwd/_MG_0751.JPG";
+import pwdImage3 from "@/assets/pwd/_MG_0753.JPG";
+import pwdImage4 from "@/assets/pwd/_MG_0792.JPG";
+import pwdImage5 from "@/assets/pwd/_MG_0798.JPG";
+import pwdImage6 from "@/assets/pwd/_MG_0811.JPG";
 
 const Accommodation = () => {
   useEffect(() => {
@@ -349,6 +358,78 @@ const Accommodation = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PWD Accessibility Section */}
+      <section className="py-20 bg-gradient-to-b from-brand-cream/50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-3 mb-4">
+              <Accessibility className="w-8 h-8 text-brand-orange" />
+              <p className="text-sm uppercase tracking-[0.3em] text-brand-brown">Accessible For All</p>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-light text-brand-brown mb-6 font-playfair">
+              PWD-Friendly Accommodation
+            </h2>
+            <p className="text-lg text-brand-brown/80 leading-relaxed font-light">
+              Samburu Elephant Lodge is committed to providing an inclusive safari experience for all guests. 
+              Our Duma Cottage has been specially designed with accessibility features to ensure that guests 
+              with disabilities can enjoy the beauty of Samburu with comfort and dignity.
+            </p>
+          </div>
+
+          {/* Accessibility Features */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">♿</span>
+              </div>
+              <h3 className="text-lg font-medium text-brand-brown mb-2">Wheelchair Access</h3>
+              <p className="text-sm text-brand-brown/70 font-light">
+                Wide doorways, ramps, and smooth pathways throughout the accessible cottage area
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🚿</span>
+              </div>
+              <h3 className="text-lg font-medium text-brand-brown mb-2">Adapted Bathrooms</h3>
+              <p className="text-sm text-brand-brown/70 font-light">
+                Roll-in showers, grab bars, and accessible fixtures designed for safety and comfort
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div className="w-12 h-12 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🤝</span>
+              </div>
+              <h3 className="text-lg font-medium text-brand-brown mb-2">Dedicated Support</h3>
+              <p className="text-sm text-brand-brown/70 font-light">
+                Trained staff available to assist with special needs and ensure a seamless experience
+              </p>
+            </div>
+          </div>
+
+          {/* PWD Image Gallery */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[pwdImage1, pwdImage2, pwdImage3, pwdImage4, pwdImage5, pwdImage6].map((image, index) => (
+              <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-md group">
+                <img 
+                  src={image}
+                  alt={`PWD accessibility feature ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <p className="text-brand-brown/70 font-light italic">
+              "Every guest deserves to experience the magic of the African wilderness. 
+              We're proud to make that possible for everyone."
+            </p>
           </div>
         </div>
       </section>
