@@ -1,0 +1,258 @@
+[
+  {
+    "id": "SEL-DBL-FB-QUIET",
+    "title": "Double Room Full Board - Quiet Season at Samburu Elephant Lodge",
+    "description": "Experience the serene beauty of Samburu during the quiet season (Feb, Mar, May, Nov). This double occupancy room includes full board with breakfast, lunch, and dinner. Enjoy stunning views of the Ewaso Ng'iro River, daily game drives, and encounters with the Samburu Special Five. Room features include solar power, outdoor shower, butler service, and complimentary Wi-Fi.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png",
+    "price": "235.00 USD",
+    "availability": "in_stock",
+    "inventory_quantity": 8,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/b3a34ba0-4a5b-4f09-88c3-b2ec1e220807.png",
+      "https://samburuelephantlodge.co.ke/lovable-uploads/c2ac7393-783e-483c-b4ee-7be22a7432d7.png"
+    ],
+    "product_category": "Hospitality > Lodging > Safari Lodge",
+    "q_and_a": [
+      {
+        "question": "Is Wi-Fi available?",
+        "answer": "Yes, complimentary Wi-Fi is available throughout the lodge."
+      },
+      {
+        "question": "What meals are included in full board?",
+        "answer": "Full board includes breakfast, lunch, and dinner prepared by our skilled chefs."
+      },
+      {
+        "question": "What are the check-in and check-out times?",
+        "answer": "Check-in is from 2:00 PM and check-out is by 10:00 AM."
+      },
+      {
+        "question": "Are children allowed?",
+        "answer": "Yes! Children 5-12 years pay 50% of adult rate, and children 1-4 years stay free."
+      }
+    ],
+    "popularity_score": 4.8
+  },
+  {
+    "id": "SEL-DBL-FB-SHOULDER",
+    "title": "Double Room Full Board - Shoulder Season at Samburu Elephant Lodge",
+    "description": "Discover Samburu's wildlife during the shoulder season (Jan 6-31, Apr, Jun, Oct, Dec 1-15). This double occupancy room includes full board with all meals. Perfect for couples seeking a romantic safari getaway with breathtaking riverside views, daily game drives, and world-class hospitality. Features solar power, outdoor shower, butler service, and Wi-Fi.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png",
+    "price": "265.00 USD",
+    "availability": "in_stock",
+    "inventory_quantity": 8,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/b3a34ba0-4a5b-4f09-88c3-b2ec1e220807.png",
+      "https://samburuelephantlodge.co.ke/lovable-uploads/c2ac7393-783e-483c-b4ee-7be22a7432d7.png"
+    ],
+    "product_category": "Hospitality > Lodging > Safari Lodge",
+    "q_and_a": [
+      {
+        "question": "Is Wi-Fi available?",
+        "answer": "Yes, complimentary Wi-Fi is available throughout the lodge."
+      },
+      {
+        "question": "What meals are included in full board?",
+        "answer": "Full board includes breakfast, lunch, and dinner prepared by our skilled chefs."
+      },
+      {
+        "question": "What are the check-in and check-out times?",
+        "answer": "Check-in is from 2:00 PM and check-out is by 10:00 AM."
+      }
+    ],
+    "popularity_score": 4.8
+  },
+  {
+    "id": "SEL-DBL-FB-PRIME",
+    "title": "Double Room Full Board - Prime Season at Samburu Elephant Lodge",
+    "description": "Experience the best of Samburu during prime season (Jul-Sep, Dec 15-Jan 5) when wildlife viewing is at its peak. This double occupancy room includes full board with gourmet meals. Witness the Great Migration and abundant wildlife along the Ewaso Ng'iro River. Features luxury amenities including solar power, outdoor shower, butler service, and Wi-Fi.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png",
+    "price": "295.00 USD",
+    "availability": "in_stock",
+    "inventory_quantity": 8,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/b3a34ba0-4a5b-4f09-88c3-b2ec1e220807.png",
+      "https://samburuelephantlodge.co.ke/lovable-uploads/c2ac7393-783e-483c-b4ee-7be22a7432d7.png"
+    ],
+    "product_category": "Hospitality > Lodging > Safari Lodge",
+    "q_and_a": [
+      {
+        "question": "Is Wi-Fi available?",
+        "answer": "Yes, complimentary Wi-Fi is available throughout the lodge."
+      },
+      {
+        "question": "What meals are included in full board?",
+        "answer": "Full board includes breakfast, lunch, and dinner prepared by our skilled chefs."
+      },
+      {
+        "question": "Why is prime season special?",
+        "answer": "Prime season offers the best wildlife viewing conditions with excellent weather and abundant animal activity."
+      }
+    ],
+    "popularity_score": 4.9
+  },
+  {
+    "id": "SEL-SGL-FB-QUIET",
+    "title": "Single Room Full Board - Quiet Season at Samburu Elephant Lodge",
+    "description": "Perfect for solo travelers seeking a peaceful safari retreat during the quiet season (Feb, Mar, May, Nov). This single occupancy room includes full board with all meals. Enjoy personalized service, riverside views, and intimate wildlife encounters. Features solar power, outdoor shower, butler service, and complimentary Wi-Fi.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/b3a34ba0-4a5b-4f09-88c3-b2ec1e220807.png",
+    "price": "170.00 USD",
+    "availability": "in_stock",
+    "inventory_quantity": 4,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png"
+    ],
+    "product_category": "Hospitality > Lodging > Safari Lodge",
+    "q_and_a": [
+      {
+        "question": "Is this room suitable for solo travelers?",
+        "answer": "Absolutely! Our single rooms are perfect for solo adventurers with all the same luxury amenities."
+      },
+      {
+        "question": "What meals are included?",
+        "answer": "Full board includes breakfast, lunch, and dinner."
+      }
+    ],
+    "popularity_score": 4.7
+  },
+  {
+    "id": "SEL-SGL-FB-PRIME",
+    "title": "Single Room Full Board - Prime Season at Samburu Elephant Lodge",
+    "description": "Solo adventure during prime season (Jul-Sep, Dec 15-Jan 5) with optimal wildlife viewing. This single occupancy room includes full board with gourmet meals. Experience the Samburu Special Five and stunning sunsets over the Ewaso Ng'iro River. Features luxury amenities including solar power, outdoor shower, butler service, and Wi-Fi.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/b3a34ba0-4a5b-4f09-88c3-b2ec1e220807.png",
+    "price": "250.00 USD",
+    "availability": "in_stock",
+    "inventory_quantity": 4,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png"
+    ],
+    "product_category": "Hospitality > Lodging > Safari Lodge",
+    "q_and_a": [
+      {
+        "question": "What makes prime season special?",
+        "answer": "Prime season offers exceptional wildlife viewing with dry conditions bringing animals to the river."
+      },
+      {
+        "question": "Are game drives included?",
+        "answer": "Game drives can be arranged at the lodge. Contact us for safari packages."
+      }
+    ],
+    "popularity_score": 4.8
+  },
+  {
+    "id": "SEL-DBL-HB-QUIET",
+    "title": "Double Room Half Board - Quiet Season at Samburu Elephant Lodge",
+    "description": "Flexible dining option during the quiet season (Feb, Mar, May, Nov). This double occupancy room includes half board with breakfast and dinner. Perfect for couples who want to explore during lunch or enjoy a picnic in the bush. Features solar power, outdoor shower, butler service, and complimentary Wi-Fi.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/c2ac7393-783e-483c-b4ee-7be22a7432d7.png",
+    "price": "200.00 USD",
+    "availability": "in_stock",
+    "inventory_quantity": 8,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png"
+    ],
+    "product_category": "Hospitality > Lodging > Safari Lodge",
+    "q_and_a": [
+      {
+        "question": "What meals are included in half board?",
+        "answer": "Half board includes breakfast and dinner. Lunch can be purchased separately or enjoy a bush picnic."
+      },
+      {
+        "question": "Is Wi-Fi available?",
+        "answer": "Yes, complimentary Wi-Fi is available throughout the lodge."
+      }
+    ],
+    "popularity_score": 4.6
+  },
+  {
+    "id": "SEL-FAMILY-FB-SHOULDER",
+    "title": "Family Safari Package - Shoulder Season at Samburu Elephant Lodge",
+    "description": "Create unforgettable family memories during shoulder season (Jan 6-31, Apr, Jun, Oct, Dec 1-15). Double room full board for adults with special rates for children: 50% off for Young Explorers (5-12 years) and FREE for Little Adventurers (1-4 years). Features family-friendly activities, wildlife education, and luxury amenities including solar power and Wi-Fi.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/c7ba6ea1-4a19-447c-a582-0203f1ab4c5b.png",
+    "price": "265.00 USD",
+    "availability": "in_stock",
+    "inventory_quantity": 6,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png",
+      "https://samburuelephantlodge.co.ke/lovable-uploads/b3a34ba0-4a5b-4f09-88c3-b2ec1e220807.png"
+    ],
+    "product_category": "Hospitality > Lodging > Family Safari",
+    "q_and_a": [
+      {
+        "question": "What are the children's rates?",
+        "answer": "Young Explorers (5-12 years) pay 50% of adult rate. Little Adventurers (1-4 years) stay FREE."
+      },
+      {
+        "question": "Is the lodge child-friendly?",
+        "answer": "Yes! We welcome families and offer age-appropriate activities and wildlife education."
+      },
+      {
+        "question": "Are there family rooms available?",
+        "answer": "Yes, we can accommodate families in our spacious cottages with connecting options."
+      }
+    ],
+    "popularity_score": 4.9
+  },
+  {
+    "id": "SEL-KES-DBL-FB-PRIME",
+    "title": "Double Room Full Board - Prime Season (Kenya Residents)",
+    "description": "Special Kenya resident rates for prime season (Jul-Sep, Dec 15-Jan 5). This double occupancy room includes full board with all meals. Experience the best wildlife viewing season at the Ewaso Ng'iro River. Features solar power, outdoor shower, butler service, and complimentary Wi-Fi. Rate is per person per night in Kenya Shillings.",
+    "link": "https://samburuelephantlodge.co.ke/accommodation",
+    "image_link": "https://samburuelephantlodge.co.ke/lovable-uploads/2aa78391-33b8-495a-bc2c-b42bc00b246b.png",
+    "price": "34000.00 KES",
+    "availability": "in_stock",
+    "inventory_quantity": 8,
+    "enable_search": true,
+    "enable_checkout": false,
+    "seller_name": "Samburu Elephant Lodge",
+    "seller_url": "https://samburuelephantlodge.co.ke",
+    "additional_image_link": [
+      "https://samburuelephantlodge.co.ke/lovable-uploads/b3a34ba0-4a5b-4f09-88c3-b2ec1e220807.png"
+    ],
+    "product_category": "Hospitality > Lodging > Safari Lodge",
+    "q_and_a": [
+      {
+        "question": "Is this rate for Kenya residents only?",
+        "answer": "Yes, this special rate is available for Kenya residents with valid ID."
+      },
+      {
+        "question": "What documents do I need?",
+        "answer": "Please bring your Kenya ID or passport with valid residency permit."
+      }
+    ],
+    "popularity_score": 4.8
+  }
+]
