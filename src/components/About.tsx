@@ -2,6 +2,7 @@
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Plane, Car, MapPin, Clock, Info, CheckCircle } from 'lucide-react';
+import lodgeSign from '@/assets/lodge-sign.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -55,8 +56,8 @@ const About = () => {
           </div>
           <div className="relative">
             <img 
-              src="/lovable-uploads/c0d96cbc-0f03-41fb-9005-5c5c061a8d15.png"
-              alt="Welcome to Samburu Elephant Lodge"
+              src={lodgeSign}
+              alt="Samburu Elephant Lodge wooden sign"
               className="w-full h-[500px] object-cover"
             />
           </div>
