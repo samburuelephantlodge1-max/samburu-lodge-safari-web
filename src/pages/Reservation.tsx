@@ -278,6 +278,12 @@ const Reservation = () => {
 
               {/* Submit Button */}
               <div className="text-center pt-6">
+                <p className="text-sm text-gray-600 mb-4">
+                  By submitting, you agree to our{" "}
+                  <a href="/privacy-policy" className="text-brand-orange hover:underline">
+                    Privacy Policy
+                  </a>
+                </p>
                 <Button
                   type="submit"
                   disabled={isSubmitting}
