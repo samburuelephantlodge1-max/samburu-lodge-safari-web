@@ -35,7 +35,7 @@ const Footer = () => {
               <li><a href="/privacy-policy" className="text-earth-200 hover:text-safari-200 transition-colors">Privacy Policy</a></li>
               <li><a href="/hotel-policy" className="text-earth-200 hover:text-safari-200 transition-colors">Hotel Policy</a></li>
               <li><a href="/data-protection" className="text-earth-200 hover:text-safari-200 transition-colors">Data Protection</a></li>
-              <li><a href="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge" target="_blank" rel="noopener noreferrer" className="text-earth-200 hover:text-safari-200 transition-colors">Direct Booking</a></li>
+              <li><a href="/reservation" className="text-earth-200 hover:text-safari-200 transition-colors">Make a Reservation</a></li>
             </ul>
           </div>
           

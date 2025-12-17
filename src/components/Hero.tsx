@@ -34,7 +34,7 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Link to="https://live.ipms247.com/booking/book-rooms-samburuelephantlodge">
+          <Link to="/reservation">
             <Button className="bg-brand-orange text-white hover:bg-brand-orange-dark px-8 py-4 text-base font-normal tracking-wide uppercase">
               {t('hero.makeReservation')}
             </Button>
