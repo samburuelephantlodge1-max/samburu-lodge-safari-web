@@ -121,7 +121,7 @@ const Footer = () => {
           <TripAdvisorWidget />
           <div className="text-center mt-4">
             <p className="text-earth-300">
-            © 2025 Samburu Elephant Lodge. All rights reserved. | 
+            © 2026 Samburu Elephant Lodge. All rights reserved. | 
             <span className="ml-2">Sustainable Tourism • Wildlife Conservation • Community Development</span>
             </p>
           </div>
