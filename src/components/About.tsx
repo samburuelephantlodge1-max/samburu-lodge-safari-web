@@ -59,6 +59,7 @@ const About = () => {
               src={lodgeSign}
               alt="Samburu Elephant Lodge wooden sign"
               className="w-full h-[500px] object-cover"
+              loading="lazy"
             />
           </div>
         </div>
