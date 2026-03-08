@@ -117,6 +117,7 @@ const Gallery = () => {
               src="/lovable-uploads/def24568-96e2-4763-9a52-6359ff5e44e3.png"
               alt="Pool experience"
               className="rounded-lg shadow-xl w-full h-80 object-cover"
+              loading="lazy"
             />
           </div>
         </div>
