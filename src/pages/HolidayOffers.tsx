@@ -178,10 +178,11 @@
  
              <Card className="overflow-hidden">
                <div className="relative h-72 md:h-96">
-                 <img 
-                   src={riversideImage} 
-                   alt="Romantic riverside dinner setup for Valentine's"
-                   className="w-full h-full object-cover"
+                  <img 
+                    src={riversideImage} 
+                    alt="Romantic riverside dinner setup for Valentine's"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                  <Badge className="absolute top-6 left-6 bg-rose-500 hover:bg-rose-600 text-lg px-4 py-2">
