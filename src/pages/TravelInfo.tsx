@@ -106,7 +106,7 @@ const TravelInfo = () => {
                 <div className="border-l-2 border-amber-600 pl-6">
                   <h4 className="text-lg font-medium text-gray-900 mb-2">Self Drive</h4>
                   <p className="text-gray-600 font-light leading-relaxed mb-3">
-                    Drive via Isiolo town, approximately 5.5 hours from Nairobi.
+                    Drive via Samburu town, approximately 5.5 hours from Nairobi.
                   </p>
                   <ul className="space-y-2 text-gray-600 font-light">
                     <li className="flex items-start">
