@@ -88,6 +88,7 @@ const About = () => {
               src="/lovable-uploads/83c625bb-f478-4857-aa19-33737444d4e6.png"
               alt="Our Mission and Vision"
               className="w-full h-[500px] object-cover"
+              loading="lazy"
             />
           </div>
         </div>
