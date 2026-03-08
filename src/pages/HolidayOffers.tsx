@@ -111,10 +111,11 @@
  
              <Card className="overflow-hidden">
                <div className="relative h-72 md:h-96">
-                 <img 
-                   src={breakfastImage} 
-                   alt="Easter bush breakfast setup at Samburu Elephant Lodge"
-                   className="w-full h-full object-cover"
+                  <img 
+                    src={breakfastImage} 
+                    alt="Easter bush breakfast setup at Samburu Elephant Lodge"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                  <Badge className="absolute top-6 left-6 bg-safari-500 hover:bg-safari-600 text-lg px-4 py-2">
