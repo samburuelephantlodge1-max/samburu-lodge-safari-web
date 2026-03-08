@@ -147,6 +147,7 @@ const Blog = () => {
                 src={featuredPost.image}
                 alt={featuredPost.title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
                 <span className="text-sm font-medium">
@@ -214,6 +215,7 @@ const Blog = () => {
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-full">
                     <span className="text-xs font-medium text-slate-700">

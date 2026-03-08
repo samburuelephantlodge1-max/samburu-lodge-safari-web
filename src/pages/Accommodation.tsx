@@ -280,6 +280,7 @@ const Accommodation = () => {
                     src={accommodation.image}
                     alt={accommodation.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1">
                     <span className="text-xs uppercase tracking-[0.1em] text-gray-700">
@@ -328,6 +329,7 @@ const Accommodation = () => {
                     src={accommodation.image}
                     alt={accommodation.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 right-4 bg-white px-3 py-1">
                     <span className="text-xs uppercase tracking-[0.1em] text-gray-700">
@@ -419,6 +421,7 @@ const Accommodation = () => {
                   src={image}
                   alt={`PWD accessibility feature ${index + 1}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
@@ -447,6 +450,7 @@ const Accommodation = () => {
                   src={conferenceRoom.image}
                   alt={conferenceRoom.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="lg:w-1/2 p-12">

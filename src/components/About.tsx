@@ -59,6 +59,7 @@ const About = () => {
               src={lodgeSign}
               alt="Samburu Elephant Lodge wooden sign"
               className="w-full h-[500px] object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -87,6 +88,7 @@ const About = () => {
               src="/lovable-uploads/83c625bb-f478-4857-aa19-33737444d4e6.png"
               alt="Our Mission and Vision"
               className="w-full h-[500px] object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -99,6 +101,7 @@ const About = () => {
                 src={feature.image}
                 alt={feature.title}
                 className="w-full h-64 object-cover mb-8"
+                loading="lazy"
               />
               <h4 className="text-xl font-light text-gray-900 mb-4 font-playfair uppercase tracking-[0.1em]">
                 {feature.title}

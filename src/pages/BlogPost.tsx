@@ -440,6 +440,7 @@ const BlogPost = () => {
               <img 
                 src={post.image}
                 alt={post.title}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">

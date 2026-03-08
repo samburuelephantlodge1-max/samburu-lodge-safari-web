@@ -50,6 +50,7 @@ const ImageShowcase = () => {
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -129,6 +130,7 @@ const ImageShowcase = () => {
               src={selectedImage}
               alt="Showcase image"
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+              loading="lazy"
             />
           )}
         </DialogContent>

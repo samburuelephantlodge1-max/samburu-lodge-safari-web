@@ -113,6 +113,7 @@ const Experiences = () => {
                   src={experience.image}
                   alt={experience.title}
                   className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
                 />
               </div>
               <CardHeader>

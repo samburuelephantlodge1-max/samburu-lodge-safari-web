@@ -76,6 +76,7 @@ const Gallery = () => {
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end">
                 <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -116,6 +117,7 @@ const Gallery = () => {
               src="/lovable-uploads/def24568-96e2-4763-9a52-6359ff5e44e3.png"
               alt="Pool experience"
               className="rounded-lg shadow-xl w-full h-80 object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -128,6 +130,7 @@ const Gallery = () => {
               src={selectedImage}
               alt="Gallery image"
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+              loading="lazy"
             />
           )}
         </DialogContent>
