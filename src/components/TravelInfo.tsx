@@ -91,7 +91,7 @@ const TravelInfo = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" />
-                    Road conditions: Good tarmac to Isiolo, then dirt road
+                    Road conditions: Good tarmac to Samburu, then dirt road
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" />
