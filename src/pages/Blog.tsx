@@ -147,6 +147,7 @@ const Blog = () => {
                 src={featuredPost.image}
                 alt={featuredPost.title}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
                 <span className="text-sm font-medium">
