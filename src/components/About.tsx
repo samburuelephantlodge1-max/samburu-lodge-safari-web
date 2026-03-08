@@ -101,6 +101,7 @@ const About = () => {
                 src={feature.image}
                 alt={feature.title}
                 className="w-full h-64 object-cover mb-8"
+                loading="lazy"
               />
               <h4 className="text-xl font-light text-gray-900 mb-4 font-playfair uppercase tracking-[0.1em]">
                 {feature.title}

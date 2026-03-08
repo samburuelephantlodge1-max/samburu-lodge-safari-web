@@ -450,6 +450,7 @@ const Accommodation = () => {
                   src={conferenceRoom.image}
                   alt={conferenceRoom.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="lg:w-1/2 p-12">

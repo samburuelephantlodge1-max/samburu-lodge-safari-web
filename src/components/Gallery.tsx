@@ -130,6 +130,7 @@ const Gallery = () => {
               src={selectedImage}
               alt="Gallery image"
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+              loading="lazy"
             />
           )}
         </DialogContent>

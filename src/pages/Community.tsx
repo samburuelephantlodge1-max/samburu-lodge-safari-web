@@ -85,6 +85,7 @@ const Community = () => {
                     src={initiative.image}
                     alt={initiative.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                 </div>
                 <CardContent className="p-8">
