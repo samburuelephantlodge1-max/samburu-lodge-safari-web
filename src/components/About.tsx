@@ -133,7 +133,7 @@ const About = () => {
             </div>
             <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto">
               <p className="text-gray-700 font-light leading-relaxed mb-4 text-center">
-                <strong>Address:</strong> 677 Samburu National Reserve, Isiolo, 60300, Kenya
+                <strong>Address:</strong> 677 Samburu National Reserve, Samburu, 60300, Kenya
               </p>
               <p className="text-gray-700 font-light leading-relaxed text-center">
                 Located within the pristine Samburu National Reserve, approximately 325 kilometers 
