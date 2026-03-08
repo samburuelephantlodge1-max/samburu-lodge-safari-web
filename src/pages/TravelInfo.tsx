@@ -38,7 +38,7 @@ const TravelInfo = () => {
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
               <p className="text-gray-700 font-light leading-relaxed mb-4">
-                <strong>Address:</strong> 677 Samburu National Reserve, Isiolo, 60300, Kenya
+                <strong>Address:</strong> 677 Samburu National Reserve, Samburu, 60300, Kenya
               </p>
               <p className="text-gray-700 font-light leading-relaxed">
                 Located within the pristine Samburu National Reserve, approximately 325 kilometers 
@@ -106,7 +106,7 @@ const TravelInfo = () => {
                 <div className="border-l-2 border-amber-600 pl-6">
                   <h4 className="text-lg font-medium text-gray-900 mb-2">Self Drive</h4>
                   <p className="text-gray-600 font-light leading-relaxed mb-3">
-                    Drive via Isiolo town, approximately 5.5 hours from Nairobi.
+                    Drive via Samburu town, approximately 5.5 hours from Nairobi.
                   </p>
                   <ul className="space-y-2 text-gray-600 font-light">
                     <li className="flex items-start">
@@ -115,7 +115,7 @@ const TravelInfo = () => {
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" />
-                      Road conditions: Good tarmac to Isiolo, then all weather road
+                      Road conditions: Good tarmac to Samburu, then all weather road
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" />

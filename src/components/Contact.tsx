@@ -143,7 +143,7 @@ const Contact = () => {
                     <p className="text-brand-brown font-medium mb-1">Postal Address:</p>
                     <p className="text-brand-brown/80 leading-relaxed">
                       677 Samburu Elephant Lodge<br />
-                      60300, Isiolo
+                      60300, Samburu
                     </p>
                   </div>
                 </div>
