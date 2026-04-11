@@ -8,6 +8,78 @@ import { Button } from '@/components/ui/button';
 import { updatePageMeta } from '@/utils/seo';
 
 const blogPosts = {
+  'driving-to-samburu-elephant-lodge': {
+    title: "Driving to Samburu Elephant Lodge — What Vehicle Do You Really Need?",
+    excerpt: "A trip to Samburu National Reserve is not just a getaway, it's an experience. For those choosing to drive themselves, one question always comes up: Can I make it with a 2WD?",
+    author: "SEL Team",
+    date: "April 11, 2026",
+    readTime: "5 min read",
+    category: "Travel Tips",
+    image: "/lovable-uploads/349d6974-edd6-418e-8d19-2ef6ff2075ae.png",
+    content: `
+      <div class="prose prose-lg max-w-none">
+        <p class="lead">A trip to Samburu National Reserve is not just a getaway, it's an experience. And for those choosing to drive themselves to Samburu Elephant Lodge, one question always comes up: <strong>"Can I make it with a 2WD?"</strong></p>
+        <p>Let's answer that properly.</p>
+
+        <h2>🚗 The Truth About 2WD vs 4WD</h2>
+        <p>A 4x4 is still the best and safest option. That hasn't changed.</p>
+        <p>But here's the honest part:</p>
+        <p><strong>👉 This season, a 2WD can make it… with care.</strong></p>
+        <p>Road conditions in and around Samburu National Reserve vary depending on weather. During dry periods, many of the main access roads are:</p>
+        <ul>
+          <li>Firm</li>
+          <li>Passable</li>
+          <li>Regularly used</li>
+        </ul>
+        <p>Which means a well-driven 2WD with decent ground clearance can reach Samburu Elephant Lodge.</p>
+
+        <h2>⚠️ What You Should Know Before Taking a 2WD</h2>
+        <p>This is where honesty matters.</p>
+        <p>Even in a good season:</p>
+        <ul>
+          <li>Some sections can be sandy</li>
+          <li>Roads inside the reserve can be uneven</li>
+          <li>Sudden weather changes can shift conditions quickly</li>
+        </ul>
+        <p>So if you're coming in a 2WD:</p>
+        <ul>
+          <li>Avoid low-clearance vehicles</li>
+          <li>Drive slowly and deliberately</li>
+          <li>Stick to main routes</li>
+          <li>Travel during the day</li>
+        </ul>
+        <p>And most importantly, <strong>be ready to turn back or adjust if conditions change.</strong></p>
+
+        <h2>🚙 Why a 4x4 Still Wins</h2>
+        <p>A 4WD gives you:</p>
+        <ul>
+          <li>Peace of mind</li>
+          <li>Flexibility to explore deeper inside the reserve</li>
+          <li>Confidence in case of rain or rough patches</li>
+        </ul>
+        <p>It's not just about reaching Samburu Elephant Lodge — it's about enjoying everything around it without hesitation.</p>
+
+        <h2>🌿 The Journey That Matters</h2>
+        <p>Whichever vehicle you choose, getting to Samburu Elephant Lodge is part of something bigger.</p>
+        <p>Here, travel connects directly to impact:</p>
+        <ul>
+          <li>Supporting local employment</li>
+          <li>Empowering surrounding communities</li>
+          <li>Contributing to conservation within Samburu National Reserve</li>
+        </ul>
+        <p>Your trip helps sustain both people and place.</p>
+
+        <h2>🧭 Final Take</h2>
+        <p><strong>4x4:</strong> Best choice, no stress</p>
+        <p><strong>2WD (this season):</strong> Possible, with caution and good judgment</p>
+        <p>So if a 2WD is what you have, don't cancel the trip. Just drive smart, plan ahead, and respect the terrain.</p>
+
+        <blockquote class="border-l-4 border-brand-terracotta pl-6 my-8 italic text-lg">
+          "Because Samburu isn't about perfection. It's about the experience."
+        </blockquote>
+      </div>
+    `
+  },
   'samburu-safari-dos-and-donts': {
     title: "Do's and Don'ts for an Unforgettable Samburu Safari",
     excerpt: "Planning a safari is exciting, but each destination has its own rhythm. Learn essential tips to make the most of your stay at Samburu Elephant Lodge.",

@@ -68,6 +68,17 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      id: 8,
+      title: "Driving to Samburu Elephant Lodge — What Vehicle Do You Really Need?",
+      excerpt: "A trip to Samburu National Reserve is not just a getaway, it's an experience. For those choosing to drive themselves, one question always comes up: Can I make it with a 2WD?",
+      author: "SEL Team",
+      date: "April 11, 2026",
+      category: "Travel Tips",
+      image: "/lovable-uploads/349d6974-edd6-418e-8d19-2ef6ff2075ae.png",
+      readTime: "5 min read",
+      slug: "driving-to-samburu-elephant-lodge"
+    },
+    {
       id: 7,
       title: "Do's and Don'ts for an Unforgettable Samburu Safari",
       excerpt: "Planning a safari is exciting, but each destination has its own rhythm. Learn essential tips to make the most of your stay at Samburu Elephant Lodge.",
