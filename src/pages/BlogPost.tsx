@@ -15,66 +15,83 @@ const blogPosts = {
     date: "April 11, 2026",
     readTime: "5 min read",
     category: "Travel Tips",
-    image: "/lovable-uploads/349d6974-edd6-418e-8d19-2ef6ff2075ae.png",
+    image: "",
     content: `
-      <div class="prose prose-lg max-w-none">
-        <p class="lead">A trip to Samburu National Reserve is not just a getaway, it's an experience. And for those choosing to drive themselves to Samburu Elephant Lodge, one question always comes up: <strong>"Can I make it with a 2WD?"</strong></p>
-        <p>Let's answer that properly.</p>
+      <div class="prose prose-lg max-w-none prose-headings:font-playfair prose-headings:text-brand-brown prose-p:text-brand-brown/80 prose-p:leading-relaxed prose-li:text-brand-brown/80">
+        
+        <p class="text-xl leading-relaxed mb-8">A trip to Samburu National Reserve is not just a getaway — it's an experience. And for those choosing to drive themselves to Samburu Elephant Lodge, one question always comes up:</p>
+        
+        <p class="text-2xl font-medium text-brand-brown text-center my-10 italic">"Can I make it with a 2WD?"</p>
+        
+        <p class="text-lg mb-12">Let's answer that properly.</p>
 
-        <h2>🚗 The Truth About 2WD vs 4WD</h2>
-        <p>A 4x4 is still the best and safest option. That hasn't changed.</p>
-        <p>But here's the honest part:</p>
-        <p><strong>👉 This season, a 2WD can make it… with care.</strong></p>
-        <p>Road conditions in and around Samburu National Reserve vary depending on weather. During dry periods, many of the main access roads are:</p>
-        <ul>
-          <li>Firm</li>
-          <li>Passable</li>
-          <li>Regularly used</li>
-        </ul>
-        <p>Which means a well-driven 2WD with decent ground clearance can reach Samburu Elephant Lodge.</p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">🚗 The Truth About 2WD vs 4WD</h2>
+          <p class="text-lg font-medium">A 4x4 is still the best and safest option. That hasn't changed.</p>
+          <p>But here's the honest part:</p>
+          <p class="text-lg font-semibold text-brand-orange my-6">👉 This season, a 2WD can make it… with care.</p>
+          <p>Road conditions in and around Samburu National Reserve vary depending on weather. During dry periods, many of the main access roads are:</p>
+          <ul class="my-6 space-y-2">
+            <li class="flex items-center gap-2">✅ Firm</li>
+            <li class="flex items-center gap-2">✅ Passable</li>
+            <li class="flex items-center gap-2">✅ Regularly used</li>
+          </ul>
+          <p>Which means a well-driven 2WD with decent ground clearance can reach Samburu Elephant Lodge.</p>
+        </div>
 
-        <h2>⚠️ What You Should Know Before Taking a 2WD</h2>
-        <p>This is where honesty matters.</p>
-        <p>Even in a good season:</p>
-        <ul>
-          <li>Some sections can be sandy</li>
-          <li>Roads inside the reserve can be uneven</li>
-          <li>Sudden weather changes can shift conditions quickly</li>
-        </ul>
-        <p>So if you're coming in a 2WD:</p>
-        <ul>
-          <li>Avoid low-clearance vehicles</li>
-          <li>Drive slowly and deliberately</li>
-          <li>Stick to main routes</li>
-          <li>Travel during the day</li>
-        </ul>
-        <p>And most importantly, <strong>be ready to turn back or adjust if conditions change.</strong></p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">⚠️ What You Should Know Before Taking a 2WD</h2>
+          <p class="font-medium text-lg">This is where honesty matters.</p>
+          <p>Even in a good season:</p>
+          <ul class="my-6 space-y-2 list-none pl-0">
+            <li>⛔ Some sections can be sandy</li>
+            <li>⛔ Roads inside the reserve can be uneven</li>
+            <li>⛔ Sudden weather changes can shift conditions quickly</li>
+          </ul>
+          <p class="mt-8 font-medium">So if you're coming in a 2WD:</p>
+          <ul class="my-6 space-y-2 list-none pl-0">
+            <li>✔️ Avoid low-clearance vehicles</li>
+            <li>✔️ Drive slowly and deliberately</li>
+            <li>✔️ Stick to main routes</li>
+            <li>✔️ Travel during the day</li>
+          </ul>
+          <p class="mt-6">And most importantly — <strong>be ready to turn back or adjust if conditions change.</strong></p>
+        </div>
 
-        <h2>🚙 Why a 4x4 Still Wins</h2>
-        <p>A 4WD gives you:</p>
-        <ul>
-          <li>Peace of mind</li>
-          <li>Flexibility to explore deeper inside the reserve</li>
-          <li>Confidence in case of rain or rough patches</li>
-        </ul>
-        <p>It's not just about reaching Samburu Elephant Lodge — it's about enjoying everything around it without hesitation.</p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">🚙 Why a 4x4 Still Wins</h2>
+          <p>A 4WD gives you:</p>
+          <ul class="my-6 space-y-2 list-none pl-0">
+            <li>✅ Peace of mind</li>
+            <li>✅ Flexibility to explore deeper inside the reserve</li>
+            <li>✅ Confidence in case of rain or rough patches</li>
+          </ul>
+          <p>It's not just about reaching Samburu Elephant Lodge — it's about enjoying everything around it without hesitation.</p>
+        </div>
 
-        <h2>🌿 The Journey That Matters</h2>
-        <p>Whichever vehicle you choose, getting to Samburu Elephant Lodge is part of something bigger.</p>
-        <p>Here, travel connects directly to impact:</p>
-        <ul>
-          <li>Supporting local employment</li>
-          <li>Empowering surrounding communities</li>
-          <li>Contributing to conservation within Samburu National Reserve</li>
-        </ul>
-        <p>Your trip helps sustain both people and place.</p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">🌿 The Journey That Matters</h2>
+          <p>Whichever vehicle you choose, getting to Samburu Elephant Lodge is part of something bigger.</p>
+          <p class="mt-4">Here, travel connects directly to impact:</p>
+          <ul class="my-6 space-y-2 list-none pl-0">
+            <li>🤝 Supporting local employment</li>
+            <li>💪 Empowering surrounding communities</li>
+            <li>🌍 Contributing to conservation within Samburu National Reserve</li>
+          </ul>
+          <p class="font-medium">Your trip helps sustain both people and place.</p>
+        </div>
 
-        <h2>🧭 Final Take</h2>
-        <p><strong>4x4:</strong> Best choice, no stress</p>
-        <p><strong>2WD (this season):</strong> Possible, with caution and good judgment</p>
-        <p>So if a 2WD is what you have, don't cancel the trip. Just drive smart, plan ahead, and respect the terrain.</p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">🧭 Final Take</h2>
+          <div class="bg-brand-cream/30 rounded-xl p-8 my-8">
+            <p class="text-lg mb-2"><strong>4x4:</strong> Best choice, no stress</p>
+            <p class="text-lg mb-0"><strong>2WD (this season):</strong> Possible, with caution and good judgment</p>
+          </div>
+          <p>So if a 2WD is what you have — <strong>don't cancel the trip.</strong></p>
+          <p>Just drive smart, plan ahead, and respect the terrain.</p>
+        </div>
 
-        <blockquote class="border-l-4 border-brand-terracotta pl-6 my-8 italic text-lg">
+        <blockquote class="border-l-4 border-brand-terracotta pl-6 my-12 italic text-xl text-brand-brown">
           "Because Samburu isn't about perfection. It's about the experience."
         </blockquote>
       </div>
@@ -508,19 +525,28 @@ const BlogPost = () => {
       <section className="pt-32 pb-16 bg-white">
         <div className="container mx-auto px-4">
           <article className="max-w-4xl mx-auto">
-            <div className="relative h-80 md:h-96 overflow-hidden mb-12 rounded-xl shadow-lg">
-              <img 
-                src={post.image}
-                alt={post.title}
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
-                <span className="text-sm font-medium">
+            {post.image && (
+              <div className="relative h-80 md:h-96 overflow-hidden mb-12 rounded-xl shadow-lg">
+                <img 
+                  src={post.image}
+                  alt={post.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
+                  <span className="text-sm font-medium">
+                    {post.category}
+                  </span>
+                </div>
+              </div>
+            )}
+            {!post.image && (
+              <div className="mb-8">
+                <span className="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">
                   {post.category}
                 </span>
               </div>
-            </div>
+            )}
             
             <div className="flex flex-wrap items-center text-sm text-slate-500 mb-8 gap-6">
               <div className="flex items-center">
