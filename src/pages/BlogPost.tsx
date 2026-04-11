@@ -525,19 +525,28 @@ const BlogPost = () => {
       <section className="pt-32 pb-16 bg-white">
         <div className="container mx-auto px-4">
           <article className="max-w-4xl mx-auto">
-            <div className="relative h-80 md:h-96 overflow-hidden mb-12 rounded-xl shadow-lg">
-              <img 
-                src={post.image}
-                alt={post.title}
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
-                <span className="text-sm font-medium">
+            {post.image && (
+              <div className="relative h-80 md:h-96 overflow-hidden mb-12 rounded-xl shadow-lg">
+                <img 
+                  src={post.image}
+                  alt={post.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-6 left-6 bg-brand-orange text-white px-4 py-2 rounded-full">
+                  <span className="text-sm font-medium">
+                    {post.category}
+                  </span>
+                </div>
+              </div>
+            )}
+            {!post.image && (
+              <div className="mb-8">
+                <span className="bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-medium">
                   {post.category}
                 </span>
               </div>
-            </div>
+            )}
             
             <div className="flex flex-wrap items-center text-sm text-slate-500 mb-8 gap-6">
               <div className="flex items-center">
