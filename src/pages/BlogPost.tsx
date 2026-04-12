@@ -26,63 +26,63 @@ const blogPosts = {
         <p class="text-lg mb-12">Let's answer that properly.</p>
 
         <div class="border-t border-brand-cream pt-10 mt-10">
-          <h2 class="text-3xl mb-6">🚗 The Truth About 2WD vs 4WD</h2>
+          <h2 class="text-3xl mb-6">The Truth About 2WD vs 4WD</h2>
           <p class="text-lg font-medium">A 4x4 is still the best and safest option. That hasn't changed.</p>
           <p>But here's the honest part:</p>
-          <p class="text-lg font-semibold text-brand-orange my-6">👉 This season, a 2WD can make it… with care.</p>
+          <p class="text-lg font-semibold text-brand-orange my-6">This season, a 2WD can make it… with care.</p>
           <p>Road conditions in and around Samburu National Reserve vary depending on weather. During dry periods, many of the main access roads are:</p>
           <ul class="my-6 space-y-2">
-            <li class="flex items-center gap-2">✅ Firm</li>
-            <li class="flex items-center gap-2">✅ Passable</li>
-            <li class="flex items-center gap-2">✅ Regularly used</li>
+            <li class="flex items-center gap-2">Firm</li>
+            <li class="flex items-center gap-2">Passable</li>
+            <li class="flex items-center gap-2">Regularly used</li>
           </ul>
           <p>Which means a well-driven 2WD with decent ground clearance can reach Samburu Elephant Lodge.</p>
         </div>
 
         <div class="border-t border-brand-cream pt-10 mt-10">
-          <h2 class="text-3xl mb-6">⚠️ What You Should Know Before Taking a 2WD</h2>
+          <h2 class="text-3xl mb-6">What You Should Know Before Taking a 2WD</h2>
           <p class="font-medium text-lg">This is where honesty matters.</p>
           <p>Even in a good season:</p>
           <ul class="my-6 space-y-2 list-none pl-0">
-            <li>⛔ Some sections can be sandy</li>
-            <li>⛔ Roads inside the reserve can be uneven</li>
-            <li>⛔ Sudden weather changes can shift conditions quickly</li>
+            <li>Some sections can be sandy</li>
+            <li>Roads inside the reserve can be uneven</li>
+            <li>Sudden weather changes can shift conditions quickly</li>
           </ul>
           <p class="mt-8 font-medium">So if you're coming in a 2WD:</p>
           <ul class="my-6 space-y-2 list-none pl-0">
-            <li>✔️ Avoid low-clearance vehicles</li>
-            <li>✔️ Drive slowly and deliberately</li>
-            <li>✔️ Stick to main routes</li>
-            <li>✔️ Travel during the day</li>
+            <li>Avoid low-clearance vehicles</li>
+            <li>Drive slowly and deliberately</li>
+            <li>Stick to main routes</li>
+            <li>Travel during the day</li>
           </ul>
           <p class="mt-6">And most importantly — <strong>be ready to turn back or adjust if conditions change.</strong></p>
         </div>
 
         <div class="border-t border-brand-cream pt-10 mt-10">
-          <h2 class="text-3xl mb-6">🚙 Why a 4x4 Still Wins</h2>
+          <h2 class="text-3xl mb-6">Why a 4x4 Still Wins</h2>
           <p>A 4WD gives you:</p>
           <ul class="my-6 space-y-2 list-none pl-0">
-            <li>✅ Peace of mind</li>
-            <li>✅ Flexibility to explore deeper inside the reserve</li>
-            <li>✅ Confidence in case of rain or rough patches</li>
+            <li>Peace of mind</li>
+            <li>Flexibility to explore deeper inside the reserve</li>
+            <li>Confidence in case of rain or rough patches</li>
           </ul>
           <p>It's not just about reaching Samburu Elephant Lodge — it's about enjoying everything around it without hesitation.</p>
         </div>
 
         <div class="border-t border-brand-cream pt-10 mt-10">
-          <h2 class="text-3xl mb-6">🌿 The Journey That Matters</h2>
+          <h2 class="text-3xl mb-6">The Journey That Matters</h2>
           <p>Whichever vehicle you choose, getting to Samburu Elephant Lodge is part of something bigger.</p>
           <p class="mt-4">Here, travel connects directly to impact:</p>
           <ul class="my-6 space-y-2 list-none pl-0">
-            <li>🤝 Supporting local employment</li>
-            <li>💪 Empowering surrounding communities</li>
-            <li>🌍 Contributing to conservation within Samburu National Reserve</li>
+            <li>Supporting local employment</li>
+            <li>Empowering surrounding communities</li>
+            <li>Contributing to conservation within Samburu National Reserve</li>
           </ul>
           <p class="font-medium">Your trip helps sustain both people and place.</p>
         </div>
 
         <div class="border-t border-brand-cream pt-10 mt-10">
-          <h2 class="text-3xl mb-6">🧭 Final Take</h2>
+          <h2 class="text-3xl mb-6">Final Take</h2>
           <div class="bg-brand-cream/30 rounded-xl p-8 my-8">
             <p class="text-lg mb-2"><strong>4x4:</strong> Best choice, no stress</p>
             <p class="text-lg mb-0"><strong>2WD (this season):</strong> Possible, with caution and good judgment</p>
