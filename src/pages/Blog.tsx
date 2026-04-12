@@ -26,42 +26,47 @@ const Blog = () => {
     image: "/lovable-uploads/d9d9e70d-c2aa-41fb-a9aa-72fc8653f136.png",
     readTime: "8 min read",
     fullContent: `
-      <div class="prose prose-lg max-w-none">
-        <p class="lead">When you book a safari, you expect stunning wildlife, breathtaking landscapes, and luxury in the wild. At Samburu Elephant Lodge (SEL), you get all that — and something much deeper: the chance to be part of a powerful local story of transformation.</p>
+      <div class="prose prose-lg max-w-none prose-headings:font-playfair prose-headings:text-brand-brown prose-p:text-brand-brown/80 prose-p:leading-relaxed prose-li:text-brand-brown/80">
+        <p class="text-xl leading-relaxed mb-8">When you book a safari, you expect stunning wildlife, breathtaking landscapes, and luxury in the wild. At Samburu Elephant Lodge (SEL), you get all that — and something much deeper: the chance to be part of a powerful local story of transformation.</p>
         
-        <h3>🌍 Where Luxury Meets Purpose</h3>
-        <p>Nestled along the peaceful banks of the Ewaso Nyiro River, <strong>Samburu Elephant Lodge</strong> is known for its intimate connection with the land and its people. Run by the Samburu community, the lodge blends warm hospitality with rich cultural experiences and immersive wildlife adventures.</p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">Where Luxury Meets Purpose</h2>
+          <p>Nestled along the peaceful banks of the Ewaso Nyiro River, <strong>Samburu Elephant Lodge</strong> is known for its intimate connection with the land and its people. Run by the Samburu community, the lodge blends warm hospitality with rich cultural experiences and immersive wildlife adventures.</p>
+          <p>But now, your stay means more than just a memory — <strong>a portion of every booking goes directly to support the work of Simama Project Organisation and Project Samburu</strong>, grassroots initiatives changing the lives of vulnerable children and youth in Samburu and beyond.</p>
+        </div>
         
-        <p>But now, your stay means more than just a memory — <strong>a portion of every booking goes directly to support the work of Simama Project Organisation and Project Samburu</strong>, grassroots initiatives changing the lives of vulnerable children and youth in Samburu and beyond.</p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">Travel That Uplifts Communities</h2>
+          <p><strong>Simama</strong>, meaning <em>"to stand"</em> in Swahili, helps children who have faced homelessness, hunger, or lack of access to education rise again. Through safe housing, education sponsorships, mentorship, and life-skills training, Simama gives them the tools to build a better future.</p>
+          <p><strong>Project Samburu</strong> works hand in hand with Simama, focusing on community-wide initiatives that create sustainable development. Together, they engage with families, schools, and entire communities to create lasting change. With the new partnership between SEL and these organizations, <strong>your stay directly supports this mission.</strong></p>
+        </div>
         
-        <h3>💛 Travel That Uplifts Communities</h3>
-        <p><strong>Simama</strong>, meaning <em>"to stand"</em> in Swahili, helps children who have faced homelessness, hunger, or lack of access to education rise again. Through safe housing, education sponsorships, mentorship, and life-skills training, Simama gives them the tools to build a better future.</p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">How You Make a Difference</h2>
+          <p>Here's what your safari booking helps support:</p>
+          <ul>
+            <li>School fees, uniforms, and supplies for at-risk students</li>
+            <li>Safe housing for children transitioning off the streets</li>
+            <li>Life skills, leadership, and mental health support</li>
+            <li>Family reintegration and community education</li>
+            <li>Career training and scholarship pathways</li>
+            <li>Community infrastructure development projects</li>
+            <li>Women's empowerment and income-generating activities</li>
+          </ul>
+          <p>You might come for the elephants and the sunsets — but you leave having helped someone stand again.</p>
+        </div>
         
-        <p><strong>Project Samburu</strong> works hand in hand with Simama, focusing on community-wide initiatives that create sustainable development. Together, they engage with families, schools, and entire communities to create lasting change. With the new partnership between SEL and these organizations, <strong>your stay directly supports this mission.</strong></p>
+        <div class="border-t border-brand-cream pt-10 mt-10">
+          <h2 class="text-3xl mb-6">A Journey With Heart</h2>
+          <p>At Samburu Elephant Lodge, your luxury safari is intertwined with the heartbeat of the community. While you enjoy morning game drives, sundowners by the river, and cultural visits with Samburu elders, <strong>you're also investing in a brighter, more empowered future for local youth.</strong></p>
+          <p>You're not just a guest here. <strong>You're a partner in something beautiful.</strong></p>
+        </div>
         
-        <h3>🐾 How You Make a Difference</h3>
-        <p>Here's what your safari booking helps support:</p>
-        <ul>
-          <li>School fees, uniforms, and supplies for at-risk students</li>
-          <li>Safe housing for children transitioning off the streets</li>
-          <li>Life skills, leadership, and mental health support</li>
-          <li>Family reintegration and community education</li>
-          <li>Career training and scholarship pathways</li>
-          <li>Community infrastructure development projects</li>
-          <li>Women's empowerment and income-generating activities</li>
-        </ul>
-        
-        <p>You might come for the elephants and the sunsets — but you leave having helped someone stand again.</p>
-        
-        <h3>✨ A Journey With Heart</h3>
-        <p>At Samburu Elephant Lodge, your luxury safari is intertwined with the heartbeat of the community. While you enjoy morning game drives, sundowners by the river, and cultural visits with Samburu elders, <strong>you're also investing in a brighter, more empowered future for local youth.</strong></p>
-        
-        <p>You're not just a guest here. <strong>You're a partner in something beautiful.</strong></p>
-        
-        <h3>📅 Ready to Travel With Purpose?</h3>
-        <p><strong>Book your stay</strong> at Samburu Elephant Lodge and be part of a story that stretches beyond the wild — into schools, homes, and hearts.</p>
-        
-        <p><strong>Experience Samburu. Empower Samburu.</strong></p>
+        <div class="bg-brand-cream/30 rounded-xl p-8 my-8">
+          <h2 class="text-3xl mb-6 mt-0">Ready to Travel With Purpose?</h2>
+          <p><strong>Book your stay</strong> at Samburu Elephant Lodge and be part of a story that stretches beyond the wild — into schools, homes, and hearts.</p>
+          <p class="mb-0"><strong>Experience Samburu. Empower Samburu.</strong></p>
+        </div>
       </div>
     `
   };
