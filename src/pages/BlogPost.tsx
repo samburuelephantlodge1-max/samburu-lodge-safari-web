@@ -507,7 +507,6 @@ const blogPosts = {
         </blockquote>
       </div>
     `
-    `
   }
 };
 
