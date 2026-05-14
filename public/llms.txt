@@ -1,0 +1,28 @@
+# Samburu Elephant Lodge
+
+> Authentic safari lodge on the banks of the Ewaso Nyiro River in Kenya's Samburu National Reserve. Wildlife, Samburu culture, and eco-friendly stays.
+
+## Pages
+
+- [Home](/): Overview of the lodge, wildlife and the Samburu experience.
+- [Accommodation](/accommodation): Cottages, tents and rooms available at the lodge.
+- [Experiences](/experiences): Game drives, cultural visits and bush activities.
+- [Travel Info](/travel-info): How to reach Samburu by road or air, and what to pack.
+- [Holiday Offers](/holiday-offers): Seasonal Easter, Valentine's and camping packages.
+- [Community](/community): Conservation and community projects supported by the lodge.
+- [Contact](/contact): Reservations and enquiries.
+- [Reservation](/reservation): Book a stay at the lodge.
+- [Blog](/blog): Stories from the wild, travel tips and conservation insights.
+
+## Blog
+
+- [Driving to Samburu Elephant Lodge](/blog/driving-to-samburu-elephant-lodge): What vehicle you really need for the drive.
+- [Samburu Safari Dos and Donts](/blog/samburu-safari-dos-and-donts): Tips for an unforgettable safari.
+- [Hidden History of Archers Post](/blog/hidden-history-archers-post): Culture and legends near the reserve.
+- [Sustainable Safari](/blog/sustainable-safari-eco-tourism): Our eco-tourism commitment.
+- [Best Time to Visit Samburu](/blog/best-time-to-visit-samburu): Seasons and wildlife viewing.
+
+## Optional
+
+- [Privacy Policy](/privacy-policy)
+- [Pre Check-in](/pre-check-in)
