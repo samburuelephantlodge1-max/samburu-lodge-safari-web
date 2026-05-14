@@ -1,4 +1,9 @@
-export const updatePageMeta = (title: string, description: string, path?: string) => {
+export const updatePageMeta = (
+  title: string,
+  description: string,
+  path?: string,
+  options?: { ogType?: string; jsonLd?: object | null }
+) => {
   // Update document title
   document.title = title;
   
@@ -59,5 +64,28 @@ export const updatePageMeta = (title: string, description: string, path?: string
       ogUrl.setAttribute('content', fullUrl);
       document.head.appendChild(ogUrl);
     }
+  }
+
+  // Update og:type
+  const ogType = options?.ogType ?? 'website';
+  let ogTypeEl = document.querySelector('meta[property="og:type"]');
+  if (ogTypeEl) {
+    ogTypeEl.setAttribute('content', ogType);
+  } else {
+    ogTypeEl = document.createElement('meta');
+    ogTypeEl.setAttribute('property', 'og:type');
+    ogTypeEl.setAttribute('content', ogType);
+    document.head.appendChild(ogTypeEl);
+  }
+
+  // Manage per-page JSON-LD (id="page-jsonld")
+  const existing = document.getElementById('page-jsonld');
+  if (existing) existing.remove();
+  if (options?.jsonLd) {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'page-jsonld';
+    script.text = JSON.stringify(options.jsonLd);
+    document.head.appendChild(script);
   }
 };
