@@ -516,15 +516,40 @@ const BlogPost = () => {
   useEffect(() => {
     if (slug && blogPosts[slug as keyof typeof blogPosts]) {
       const post = blogPosts[slug as keyof typeof blogPosts];
+      const fullTitle = post.title.length > 55
+        ? post.title.slice(0, 57) + '…'
+        : `${post.title} | SEL Blog`;
+      const desc = post.excerpt.length > 155
+        ? post.excerpt.slice(0, 155).replace(/\s+\S*$/, '') + '…'
+        : post.excerpt;
       updatePageMeta(
-        `${post.title} - Samburu Elephant Lodge Blog`,
-        post.excerpt,
-        `/blog/${slug}`
+        fullTitle.length > 60 ? post.title.slice(0, 57) + '…' : fullTitle,
+        desc,
+        `/blog/${slug}`,
+        {
+          ogType: 'article',
+          jsonLd: {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: post.title,
+            description: desc,
+            author: { '@type': 'Person', name: post.author },
+            datePublished: post.date,
+            image: post.image
+              ? `https://samburuelephantlodge.co.ke${post.image}`
+              : undefined,
+            publisher: {
+              '@type': 'Organization',
+              name: 'Samburu Elephant Lodge',
+            },
+            mainEntityOfPage: `https://samburuelephantlodge.co.ke/blog/${slug}`,
+          },
+        }
       );
     } else {
       updatePageMeta(
-        "Blog Post Not Found - Samburu Elephant Lodge",
-        "The blog post you're looking for doesn't exist. Explore our other safari stories and wildlife conservation insights.",
+        "Blog Post Not Found — SEL",
+        "This blog post doesn't exist. Explore our other safari stories from Samburu Elephant Lodge.",
         `/blog/${slug}`
       );
     }
