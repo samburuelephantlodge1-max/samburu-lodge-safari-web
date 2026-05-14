@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://samburu-lodge-safari-web.lovable.app/sitemap.xml
+Sitemap: https://samburuelephantlodge.co.ke/sitemap.xml
