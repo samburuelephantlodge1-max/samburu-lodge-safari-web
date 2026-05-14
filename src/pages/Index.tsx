@@ -15,8 +15,8 @@ import { updatePageMeta } from "@/utils/seo";
 const Index = () => {
   useEffect(() => {
     updatePageMeta(
-      "Samburu Elephant Lodge - Authentic Safari Experience in Kenya",
-      "Experience luxury and wildlife at Samburu Elephant Lodge in Kenya's Samburu National Reserve. Authentic safari adventures, cultural encounters, and eco-friendly accommodations.",
+      "Samburu Elephant Lodge — Safari Lodge in Kenya",
+      "Authentic safari lodge in Kenya's Samburu National Reserve. Wildlife, culture and eco-friendly stays on the Ewaso Nyiro River.",
       "/"
     );
   }, []);
