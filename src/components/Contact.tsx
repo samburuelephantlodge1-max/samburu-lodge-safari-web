@@ -167,7 +167,6 @@ const Contact = () => {
                   </p>
                 </div>
               </CardContent>
-              </CardContent>
             </Card>
 
             <Card className="bg-white border-brand-cream/50 shadow-sm">
