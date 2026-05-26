@@ -46,7 +46,6 @@ const Footer = () => {
             <div className="space-y-2 text-earth-200">
               <p>677 Samburu National Reserve</p>
               <p>Samburu, 60300, Kenya</p>
-              <p>Phone: +254 110 463 062</p>
               <p>WhatsApp: +254 796 099 657</p>
               <p>Email: info@samburuelephantlodge.co.ke</p>
             </div>
