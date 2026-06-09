@@ -18,7 +18,7 @@ const Footer = () => {
               Committed to sustainable tourism and community development.
             </p>
             <p className="text-earth-300 text-sm">
-              Managed by <a href="https://creekoxley.com" target="_blank" rel="noopener noreferrer" className="text-safari-200 hover:text-safari-100 transition-colors underline">Creek Oxley</a>
+              Managed by <a href="https://lmrhotel.com" target="_blank" rel="noopener noreferrer" className="text-safari-200 hover:text-safari-100 transition-colors underline">La Maison Royale</a>
             </p>
           </div>
           
